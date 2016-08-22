@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('[data-toggle="tooltip"]').tooltip();
+
 
 
     //Init functions
@@ -13,6 +13,7 @@ $(document).ready(function () {
     customModal();
     caption();
     waypoints();
+    showToolTip();
 
 
 
@@ -31,6 +32,12 @@ $(document).ready(function () {
 
         });
     }
+
+    //Show tooltip
+    function showToolTip() {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+
 
     //Scroll function
     function scroll() {
