@@ -5,6 +5,7 @@ var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var minifycss = require('gulp-minify-css');
@@ -58,6 +59,7 @@ gulp.task('scripts', function(){
         .pipe(gulp.dest('dist/scripts/'))
         .pipe(browserSync.reload({stream:true}))
 });
+
 
 gulp.task('default', ['browser-sync', 'bs-reload', 'images', 'styles', 'scripts'], function(){
     gulp.watch("src/scss/**/*.scss", ['styles', 'styles']);
