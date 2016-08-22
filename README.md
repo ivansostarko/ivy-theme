@@ -1,2 +1,4 @@
-# ivy-theme
-Ivy - Bootstrap personal theme
+# Ivy - Bootstrap personal theme
+
+Coming soon...
+

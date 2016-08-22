@@ -1,0 +1,37 @@
+/* Tooltips
+===================================*/
+.tooltip {
+
+  .tooltip-inner {
+    padding: 10px 30px;
+    background: $toolTipColor;
+    color: $toolTipTextColor;
+    box-shadow: $toolTipShadow;
+  }
+
+  &.top .tooltip-arrow {
+    bottom: -5px;
+    border-width: 10px 10px 0;
+    border-top-color: $toolTipColor;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: $toolTipColor;
+    border-width: 10px 0 10px 10px;
+    top: 16px !important;
+    right: -5px;
+  }
+
+  &.right .tooltip-arrow {
+    border-right-color: $toolTipColor;
+    border-width: 10px 10px 10px 0px;
+    top: 16px !important;
+    left: -5px;
+  }
+
+  &.bottom .tooltip-arrow {
+    border-bottom-color: $toolTipColor;
+    top: -5px;
+    border-width: 0px 10px 10px;
+  }
+}

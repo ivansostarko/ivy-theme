@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ivy</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600" rel="stylesheet" type="text/css">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Homepage -->
+    <link href="node_modules/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/base.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar-wrapper">
+        <ul id="sidebar_menu" class="sidebar-nav">
+            <li class="sidebar-brand"><a id="menu-toggle" href="#">Ivy<span id="main_icon"  class="fa fa-bars"></span></a></li>
+        </ul>
+        <ul class="sidebar-nav" id="sidebar">
+            <li class="pointer"><a data-scroll="home" class="highlight" data-toggle="tooltip" data-placement="right" title="Home">Home<span class="sub_icon fa fa-home"></span></a></li>
+            <li class="pointer"><a data-scroll="about" data-toggle="tooltip" data-placement="right" title="About">About me<span class="sub_icon fa fa-user"></span></a></li>
+            <li class="pointer"><a data-scroll="portfolio" data-toggle="tooltip" data-placement="right" title="Portfolio">Portfolio<span class="sub_icon fa fa-briefcase"></span></a></li>
+            <li class="pointer"><a data-scroll="blog" data-toggle="tooltip" data-placement="right" title="Blog">Blog<span class="sub_icon fa fa-comment-o"></span></a></li>
+            <li class="pointer"><a data-scroll="contacts" data-toggle="tooltip" data-placement="right" title="Contact">Contacts<span class="sub_icon fa fa-envelope-o"></span></a></li>
+        </ul>
+
+        <ul class="sidebar-nav sidebar-bottom">
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="GitHub">GitHub<span class="sub_icon fa fa-git"></span></a></li>
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="LinkedIn">LinkedIn<span class="sub_icon fa fa-linkedin"></span></a></li>
+        </ul>
+    </nav>
+    <!-- / Sidebar -->
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="jumbotron">
+                <h1 class="animated bounce">John Smith</h1>
+                <div>
+                <h2 id="home_text"></h2>
+                </div>
+                <p>
+                    <a class="scroll-down pointer" id="scrollToAbout"><i class="fa fa-angle-down"></i></a>
+                </p>
+            </div>
+        </section>
+        <!-- / Home Section -->
+
+        <!-- About Section -->
+        <section class="container-full  section-two" id="about">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                    <h1 class="animate_waypoint animated">About me</h1>
+                    </div>
+                    <article>
+                        <div class="col-md-3 to-match">
+                            <figure class="profile_image animate_waypoint animated">
+                                <img src="assets/images/profile_picture.jpg" width="100%" />
+                            </figure>
+
+
+                        </div>
+                        <div class="col-md-9 to-match animate_waypoint animated">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
+                            aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
+                            pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc
+                            tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                        </p>
+                        <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
+                            augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus.
+                            Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a
+                            ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede
+                            arcu, dapibus eu, fermentum et, dapibus sed, urna.
+                        </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/About Section -->
+
+        <!-- CV Section -->
+        <section class="container-full  section-three">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <article>
+                        <div class="col-md-9 to-match animate_waypoint animated">
+                           <h2>Request CV</h2>
+                            <p>A descriptive sentence for the Call To Action (CTA).</p>
+                        </div>
+                        <div class="col-md-3 to-match animate_waypoint animated">
+                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective" data-modal="cv-modal"><span class="glyphicon glyphicon-arrow-down"></span> Request CV</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/CV Section -->
+
+        <!-- Portfolio Section -->
+        <section class="container section-one" id="portfolio">
+            <div class="row">
+                <div class="col-md-12 to-match animate_waypoint animated">
+                    <div class="page-title">
+                        <h1>Featured works</h1>
+                    </div>
+                    <article>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                        <h4 class="">Project name</h4>
+
+                                        <p class="">short thumbnail description</p>
+                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+
+                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
+                                </div>
+                            </div>
+                            <!-- break -->
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                        <h4 class="">Thumbnail Headline</h4>
+
+                                        <p class="">short thumbnail description</p>
+                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+
+                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                        <h4 class="">Thumbnail Headline</h4>
+
+                                        <p class="">short thumbnail description</p>
+                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+
+                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <!--/Portfolio Section -->
+
+
+        <!-- Request Portfolio Section -->
+        <section class="container-full  section-three animate_waypoint animated">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <article>
+                        <div class="col-md-9 to-match animate_waypoint animated">
+                            <h2>Request Portfolio</h2>
+                            <p>A descriptive sentence for the Call To Action (CTA).</p>
+                        </div>
+                        <div class="col-md-3 to-match animate_waypoint animated">
+                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective" data-modal="portfolio-modal"><span class="glyphicon glyphicon-arrow-down"></span> Request Portfolio</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/Request Portfolio Section -->
+
+
+
+        <!-- Blog Section -->
+        <section class="container-full  section-two" id="blog">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1 class="animate_waypoint animated">Latest blog</h1>
+                    </div>
+                    <article>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                        <h4 class="">Project name</h4>
+
+                                        <p class="">short thumbnail description</p>
+                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+
+                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
+                                </div>
+                            </div>
+                            <!-- break -->
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                        <h4 class="">Thumbnail Headline</h4>
+
+                                        <p class="">short thumbnail description</p>
+                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+
+                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="thumbnail">
+                                    <div class="caption">
+                                        <h4 class="">Thumbnail Headline</h4>
+
+                                        <p class="">short thumbnail description</p>
+                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
+
+                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
+                                        </p>
+                                    </div>
+                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/Blog Section -->
+
+
+        <!-- Contacts Section -->
+        <section class="container section-one" id="contacts">
+            <div class="row">
+                <div class="col-md-12 to-match animate_waypoint animated">
+                    <div class="page-title">
+                        <h1>Contacts</h1>
+                    </div>
+                    <article>
+                        <div class="row">
+                            <form role="form">
+                                <div class="form-group">
+                                    <div class="input-group Name">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="text" class="form-control" name="cv_full_name" placeholder="Full name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group phone">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="phone" class="form-control" name="cv_company_name" placeholder="Company name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group phone">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input type="phone" class="form-control" name="cv_phone_number" placeholder="Phone number">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group email">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input type="email" class="form-control" name="cv_email_address" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <!--/Contacts Section -->
+
+
+        <!-- Price Estimate Section -->
+        <section class="container-full  section-three animate_waypoint animated">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <article>
+                        <div class="col-md-9 to-match animate_waypoint animated">
+                            <h2>Project price stimate</h2>
+                            <p>A descriptive sentence for the Call To Action (CTA).</p>
+                        </div>
+                        <div class="col-md-3 to-match animate_waypoint animated">
+                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective" data-modal="portfolio-modal"><span class="glyphicon glyphicon-arrow-down"></span> Estimate price</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/Price Estimate Section -->
+
+
+        <!-- Footer -->
+        <footer class="container-full  section-one animate_waypoint animated">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <article>
+                        <div class="col-md-6 to-match animate_waypoint animated">
+
+                            <p>Copyright &copy; 2016 - Theme Ivy.</p>
+                        </div>
+                        <div class="col-md-6 to-match animate_waypoint animated">
+                            <p>Copyright &copy; 2016 - Theme Ivy.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+            </footer>
+        <!--/Footer Section -->
+    </div>
+
+
+</div>
+
+<!-- Back to Top -->
+<a href="#0" class="cd-top cd-is-visible">Top</a>
+
+<!-- Overlay element -->
+<div class="md-overlay"></div>
+
+
+<!-- Request CV -->
+<div class="md-modal md-effect-19" id="cv-modal">
+    <div class="md-content">
+        <h3>Request CV</h3>
+        <div>
+            <ul>
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group Name">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="text" class="form-control" name="cv_full_name" placeholder="Full name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group phone">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="phone" class="form-control" name="cv_company_name" placeholder="Company name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group phone">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input type="phone" class="form-control" name="cv_phone_number" placeholder="Phone number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group email">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input type="email" class="form-control" name="cv_email_address" placeholder="Email address">
+                        </div>
+                    </div>
+                </form>
+            </ul>
+            <div class="md-content">
+                <div class="clearfix">
+                    <div class="btn-group inline pull-right" >
+                        <button class="btn btn-small md-close md-button">Close me!</button>
+                        <button class="btn btn-small  md-button" id="cv_submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Request Portfolio -->
+<div class="md-modal md-effect-19" id="portfolio-modal">
+    <div class="md-content">
+        <h3>Request Porftolio</h3>
+        <div>
+            <ul>
+                <form role="form">
+                    <div class="form-group">
+                        <div class="input-group Name">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="text" class="form-control" name="portfolio_full_name" placeholder="Full name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group phone">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="phone" class="form-control" name="portfolio_company_name" placeholder="Company name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group phone">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input type="phone" class="form-control" name="portfolio_phone_number" placeholder="Phone number">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group email">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input type="email" class="form-control" name="portfolio_email_address" placeholder="Email address">
+                        </div>
+                    </div>
+                </form>
+            </ul>
+            <div class="md-content">
+                <div class="clearfix">
+                    <div class="btn-group inline pull-right" >
+                        <button class="btn btn-small md-close md-button">Close me!</button>
+                        <button class="btn btn-small  md-button" id="portfolio_submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS plugins -->
+<script src="node_modules/active-scroll/dist/active-scroll.min.js"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+
+<!-- Homepage -->
+<script src="node_modules/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+<script src="node_modules/typed.js/dist/typed.min.js"></script>
+<script src="node_modules/desandro-classie/classie.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+
+<script>
+
+    //Submit CV Request
+    $('#cv_submit').on('click', function() {
+
+        //Run animation
+        var $this = $(this);
+        $this.button('loading');
+        setTimeout(function() {
+            $this.button('reset');
+        }, 3000);
+
+       //Show notification
+        $.toast({
+            heading: 'Success',
+            text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
+            showHideTransition: 'slide',
+            icon: 'success',
+            position: 'bottom-right',
+
+        })
+    });
+
+    //Submit Portfolio Request
+    $('#portfolio_submit').on('click', function() {
+
+        //Run animation
+        var $this = $(this);
+        $this.button('loading');
+        setTimeout(function() {
+            $this.button('reset');
+        }, 3000);
+
+        //Show notification
+        $.toast({
+            heading: 'Success',
+            text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
+            showHideTransition: 'slide',
+            icon: 'success',
+            position: 'bottom-right',
+
+        })
+    });
+</script>
+
+</body>
+
+</html>
