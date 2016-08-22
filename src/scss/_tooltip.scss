@@ -3,6 +3,8 @@
 .tooltip {
 
   .tooltip-inner {
+    width:auto;
+    min-width: 150px;
     padding: 10px 30px;
     background: $toolTipColor;
     color: $toolTipTextColor;
