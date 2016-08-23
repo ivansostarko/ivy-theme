@@ -11,6 +11,16 @@ html, body {
   background: rgb(237, 239, 240);
 }
 
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+  outline: 1px solid rgba(0,0,0,0.3);
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Open Sans", sans-serif;
   font-weight:700;
@@ -20,9 +30,6 @@ p {
   text-align:justify;
 }
 
-.clearfix {
-  clear: both;
-}
 
 section:not(:first-of-type),
 section:not(:nth-of-type(n2)) {

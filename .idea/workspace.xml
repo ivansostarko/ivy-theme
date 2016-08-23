@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54f58ccd-4928-4ce6-a4b7-d7e76a4ae284" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/_scroll_to_top.scss" afterPath="$PROJECT_DIR$/src/scss/_scroll_to_top.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/base.scss" afterPath="$PROJECT_DIR$/src/scss/base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/_layout.scss" afterPath="$PROJECT_DIR$/src/scss/_layout.scss" />
     </list>
     <ignored path="Ivy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/scss/base.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="366">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="25" />
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -60,11 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
               <caret line="60" column="31" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scss/_layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -97,10 +106,10 @@
         <option value="$PROJECT_DIR$/src/scss/_tooltip.scss" />
         <option value="$PROJECT_DIR$/src/scss/_bootstrap.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/scss/_layout.scss" />
         <option value="$PROJECT_DIR$/src/scss/base.scss" />
         <option value="$PROJECT_DIR$/src/scss/_scroll_to_top.scss" />
         <option value="$PROJECT_DIR$/src/scripts/main.js" />
+        <option value="$PROJECT_DIR$/src/scss/_layout.scss" />
       </list>
     </option>
   </component>
@@ -307,7 +316,7 @@
       <option name="presentableId" value="Default" />
       <updated>1471798484105</updated>
       <workItem from="1471798488040" duration="29506000" />
-      <workItem from="1471893370417" duration="18403000" />
+      <workItem from="1471893370417" duration="19082000" />
     </task>
     <task id="LOCAL-00001" summary="Gulp">
       <created>1471901071444</created>
@@ -351,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471911408408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="scroll to top">
+      <created>1471911919418</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1471911919418</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47909000" />
+    <option name="totallyTimeSpent" value="48588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1055" extended-state="0" />
@@ -399,7 +415,8 @@
     <MESSAGE value="sidebar fix" />
     <MESSAGE value="nav" />
     <MESSAGE value="homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="homepage" />
+    <MESSAGE value="scroll to top" />
+    <option name="LAST_COMMIT_MESSAGE" value="scroll to top" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -574,14 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="202" column="8" selection-start-line="202" selection-start-column="2" selection-end-line="202" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -593,10 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/base.scss">
+    <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="111">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -609,10 +618,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/main.js">
+    <entry file="file://$PROJECT_DIR$/src/scss/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="60" column="31" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="31" />
+        <state relative-caret-position="366">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
           <folding />
         </state>
       </provider>
