@@ -4,9 +4,7 @@
     <list default="true" id="54f58ccd-4928-4ce6-a4b7-d7e76a4ae284" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/_bootstrap.scss" afterPath="$PROJECT_DIR$/src/scss/_bootstrap.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/_layout.scss" afterPath="$PROJECT_DIR$/src/scss/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/base.scss" afterPath="$PROJECT_DIR$/src/scss/base.scss" />
     </list>
     <ignored path="Ivy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +30,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="317" column="70" selection-start-line="317" selection-start-column="70" selection-end-line="317" selection-end-column="70" />
+            <state relative-caret-position="250">
+              <caret line="385" column="89" selection-start-line="385" selection-start-column="89" selection-end-line="385" selection-end-column="89" />
               <folding>
-                <element signature="e#20703#20709#0" expanded="true" />
-                <element signature="e#20886#20892#0" expanded="true" />
+                <element signature="e#20713#20719#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/scss/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+              <caret line="200" column="23" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -85,8 +82,8 @@
       <file leaf-file-name="_bootstrap.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scss/_bootstrap.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
+            <state relative-caret-position="-1080">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="97" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -329,7 +326,7 @@
       <option name="presentableId" value="Default" />
       <updated>1471798484105</updated>
       <workItem from="1471798488040" duration="29506000" />
-      <workItem from="1471893370417" duration="21361000" />
+      <workItem from="1471893370417" duration="22647000" />
     </task>
     <task id="LOCAL-00001" summary="Gulp">
       <created>1471901071444</created>
@@ -387,11 +384,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471912589147</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sections">
+      <created>1471914869973</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1471914869973</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50867000" />
+    <option name="totallyTimeSpent" value="52153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1055" extended-state="0" />
@@ -437,7 +441,8 @@
     <MESSAGE value="homepage" />
     <MESSAGE value="scroll to top" />
     <MESSAGE value="scrollbars" />
-    <option name="LAST_COMMIT_MESSAGE" value="scrollbars" />
+    <MESSAGE value="sections" />
+    <option name="LAST_COMMIT_MESSAGE" value="sections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -620,6 +625,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/_bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="97" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="385" column="89" selection-start-line="385" selection-start-column="89" selection-end-line="385" selection-end-column="89" />
+          <folding>
+            <element signature="e#20713#20719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -628,29 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/_bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="145" column="9" selection-start-line="145" selection-start-column="9" selection-end-line="145" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="317" column="70" selection-start-line="317" selection-start-column="70" selection-end-line="317" selection-end-column="70" />
-          <folding>
-            <element signature="e#20703#20709#0" expanded="true" />
-            <element signature="e#20886#20892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <caret line="200" column="23" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
           <folding />
         </state>
       </provider>
