@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-
+    $('#wrapper').addClass('loaded');
 
     //Init functions
     loader();
@@ -81,7 +81,7 @@ $(document).ready(function () {
     //Home text
     function homeText() {
         $("#home_text").typed({
-            strings: ["Professional Graphic Designer.", "Crazy Chocolate Lover.", "Pretty Awesome Writer."],
+            strings: ["Forever free, open source, and easy to use.", " You can use Ivy for any purpose, even comercially!.", "Ivy is built for the Bootstrap 3."],
             typeSpeed: 50,
             backDelay: 500,
             loop: true,

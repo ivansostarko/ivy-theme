@@ -39,7 +39,7 @@ section:not(:nth-of-type(n2)) {
 /* Homepage
 ===================================*/
 section.home {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/201958/zen-lake-boat.jpg');
+  background: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -146,6 +146,7 @@ section.home {
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-radius: 100%;
+  text-align: center;
 }
 
 .pointer {
@@ -198,3 +199,6 @@ section.home {
   box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
 
+#home_text {
+  height: 33px;
+}
