@@ -8,13 +8,13 @@ html, body {
   color: rgb(107, 110, 128);
   margin: 0px;
   padding: 0px;
-  background: rgb(237, 239, 240);
+  background: $background-color;
+  height:100%;
 }
 
 body::-webkit-scrollbar {
   width: 0.8em;
 }
-
 
 body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
@@ -37,9 +37,16 @@ section:not(:nth-of-type(n2)) {
   padding-bottom: 80px;
 }
 .section-one,
-.section-two {
+.section-two,
+.section-three {
   margin-top: 80px;
   padding-bottom: 80px;
+}
+
+section {
+  padding-top:40px;
+  padding-bottom:40px;
+  min-height:calc(100% - 1px);
 }
 
 
@@ -61,64 +68,28 @@ section.home {
   width: 90%;
 }
 
-.jumbotron > h1 {
-
-}
-
-.jumbotron-btn {
-  background: #fff;
-  color: #111111;
-}
-
-.jumbotron-btn:hover {
-  background: rgb(24, 53, 50);
-  color: #fff;
-  border: 1px solid #fff;
-}
-
 .highlight {
-  background: white !important;
+  background: $sidebar-background-hover !important;
 }
 
 .highlight:hover {
-  color: #fff !important;
+  color: $sidebar-background-hover !important;
   background: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* Section One Styles
 ===================================*/
-.section-one-content {
-  padding: 40px 20px;
-  color: #ffffff;
-  font-weight: 300;
-}
 
-.section-one-content h1 {
-  margin: 0 0 20px;
+.section-one {
+  background:$background-color;
 }
-
-#section-one-left {
-  background: #183532;
-}
-
-#section-one-middle {
-  background: #244F4A;
-}
-
-#section-one-right {
-  background: #2A5C56;
-}
-
 .section-two {
   background: #fff;
 }
 
 .section-three {
-  color:white;
+  color:#fff;
   background: $primary-color;
-  margin-top: 80px;
-  padding-bottom: 30px;
-
 }
 
 .row {
