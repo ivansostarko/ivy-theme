@@ -10,6 +10,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var minifycss = require('gulp-minify-css');
 var browserSync = require('browser-sync');
+var Promise = require('es6-promise').Promise;
 
 gulp.task('browser-sync', function() {
     browserSync({
