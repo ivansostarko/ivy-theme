@@ -1,5 +1,12 @@
 /* Layout Styles
 ===================================*/
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -19,6 +26,10 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
   outline: 1px solid rgba(0,0,0,0.3);
+}
+body.overflow-hidden {
+  /* used when modal is visible */
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -54,6 +65,7 @@ section {
 ===================================*/
 section.home {
   background: url('../images/background.jpg');
+  filter:sepia(30%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -205,4 +217,28 @@ footer {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+}
+.portfolio-homepage {
+
+  .carousel {
+    margin-bottom: 0;
+    padding:0;
+  }
+  .carousel-control {
+    position: relative;
+    background: $primary-color;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    opacity: 1;
+    padding: 5px 15px;
+
+  }
+  .carousel-margin-right {
+    margin-right:30px;
+  }
+
+
+
 }

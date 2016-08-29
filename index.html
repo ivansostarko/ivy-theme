@@ -13,13 +13,18 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600" rel="stylesheet" type="text/css">
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600" rel="stylesheet"
+          type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Styles -->
     <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="node_modules/animate.css/animate.min.css" rel="stylesheet">
-
-    <!-- Homepage -->
     <link href="node_modules/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet">
+
 
     <!-- Main CSS -->
     <link href="dist/styles/base.min.css" rel="stylesheet">
@@ -47,36 +52,57 @@
     <!-- Sidebar -->
     <nav id="sidebar-wrapper">
         <ul id="sidebar_menu" class="sidebar-nav">
-            <li class="sidebar-brand"><a id="menu-toggle" href="#">Ivy<span id="main_icon"  class="fa fa-bars"></span></a></li>
+            <li class="sidebar-brand"><a id="menu-toggle" href="#">Ivy<span id="main_icon"
+                                                                            class="fa fa-bars"></span></a></li>
         </ul>
         <ul class="sidebar-nav" id="sidebar">
-            <li class="pointer"><a data-scroll="home" class="highlight" data-toggle="tooltip" data-placement="right" title="Home">Home<span class="sub_icon fa fa-home"></span></a></li>
-            <li class="pointer"><a data-scroll="about" data-toggle="tooltip" data-placement="right" title="About">About me<span class="sub_icon fa fa-user"></span></a></li>
-            <li class="pointer"><a data-scroll="portfolio" data-toggle="tooltip" data-placement="right" title="Portfolio">Portfolio<span class="sub_icon fa fa-briefcase"></span></a></li>
-            <li class="pointer"><a data-scroll="blog" data-toggle="tooltip" data-placement="right" title="Blog">Blog<span class="sub_icon fa fa-comment-o"></span></a></li>
-            <li class="pointer"><a data-scroll="contacts" data-toggle="tooltip" data-placement="right" title="Contacts">Contacts<span class="sub_icon fa fa-envelope-o"></span></a></li>
-            <li><a href="components.html" data-toggle="tooltip" data-placement="right" title="Components">Components<span class="sub_icon fa fa-css3 pull-right"></span></a></li>
+            <li class="pointer"><a data-scroll="home" class="highlight" data-toggle="tooltip" data-placement="right"
+                                   title="Home">Home<span class="sub_icon fa fa-home"></span></a></li>
+            <li class="pointer"><a data-scroll="about" data-toggle="tooltip" data-placement="right" title="About">About
+                me<span class="sub_icon fa fa-user"></span></a></li>
+            <li class="pointer"><a data-scroll="portfolio" data-toggle="tooltip" data-placement="right"
+                                   title="Portfolio">Portfolio<span class="sub_icon fa fa-briefcase"></span></a></li>
+            <li class="pointer"><a data-scroll="blog" data-toggle="tooltip" data-placement="right"
+                                   title="Blog">Blog<span class="sub_icon fa fa-comment-o"></span></a></li>
+            <li class="pointer"><a data-scroll="contacts" data-toggle="tooltip" data-placement="right" title="Contacts">Contacts<span
+                    class="sub_icon fa fa-envelope-o"></span></a></li>
+            <li><a href="components.html" data-toggle="tooltip" data-placement="right"
+                   title="Components">Components<span class="sub_icon fa fa-css3 pull-right"></span></a></li>
 
             <!-- Submenu 1 -->
-            <li class="pointer"><a  id="submenu_1" data-toggle="collapse" data-target="#submenu_pages" aria-expanded="false">Pages<span class="sub_icon fa fa-share pull-right"></span></a>
-            <ul class="nav collapse" id="submenu_pages" role="menu" aria-labelledby="submenu_2">
-                <li><a data-scroll="contacts" data-toggle="tooltip" data-placement="right" title="Blog" href="blog.html">Blog<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                <li><a href="blog-single.html" data-toggle="tooltip" data-placement="right" title="Blog Single">Blog single<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                <li><a href="portfolio.html" data-toggle="tooltip" data-placement="right" title="Portfolio">Portfolio<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                <li><a href="portfolio-single.html" data-toggle="tooltip" data-placement="right" title="Portfolio Single">Portfolio 2<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                <li><a href="cv.html" data-toggle="tooltip" data-placement="right" title="CV">CV<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                <li><a href="password.html" data-toggle="tooltip" data-placement="right" title="Password">Password<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                <li><a href="cost-estimation.html" data-toggle="tooltip" data-placement="right" title="Cost estimation">Cost<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-            </ul>
+            <li class="pointer"><a id="submenu_1" data-toggle="collapse" data-target="#submenu_pages"
+                                   aria-expanded="false">Pages<span class="sub_icon fa fa-share pull-right"></span></a>
+                <ul class="nav collapse" id="submenu_pages" role="menu" aria-labelledby="submenu_2">
+                    <li><a data-scroll="contacts" data-toggle="tooltip" data-placement="right" title="Blog"
+                           href="blog.html">Blog<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="blog-single.html" data-toggle="tooltip" data-placement="right" title="Blog Single">Blog
+                        single<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="portfolio.html" data-toggle="tooltip" data-placement="right" title="Portfolio">Portfolio<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="portfolio-single.html" data-toggle="tooltip" data-placement="right"
+                           title="Portfolio Single">Portfolio 2<span class="sub_icon fa fa-circle-o pull-right"></span></a>
+                    </li>
+                    <li><a href="cv.html" data-toggle="tooltip" data-placement="right" title="CV">CV<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="password.html" data-toggle="tooltip" data-placement="right"
+                           title="Password">Password<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="cost-estimation.html" data-toggle="tooltip" data-placement="right"
+                           title="Cost estimation">Cost<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                </ul>
             </li>
             <!-- /Submenu 1 -->
 
             <!-- Submenu 2 -->
-            <li class="pointer"><a id="submenu-2" data-toggle="collapse" data-target="#submenu_errors" aria-expanded="false">Errors<span class="sub_icon fa fa-exclamation-triangle pull-right"></span></a>
+            <li class="pointer"><a id="submenu-2" data-toggle="collapse" data-target="#submenu_errors"
+                                   aria-expanded="false">Errors<span
+                    class="sub_icon fa fa-exclamation-triangle pull-right"></span></a>
                 <ul class="nav collapse" id="submenu_errors" role="menu" aria-labelledby="btn-1">
-                    <li><a href="404.html" data-toggle="tooltip" data-placement="right" title="Error 404">404<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                    <li><a href="500.html" data-toggle="tooltip" data-placement="right" title="Error 500">500<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
-                    <li><a href="503.html" data-toggle="tooltip" data-placement="right" title="Error 503">503<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="404.html" data-toggle="tooltip" data-placement="right" title="Error 404">404<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="500.html" data-toggle="tooltip" data-placement="right" title="Error 500">500<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="503.html" data-toggle="tooltip" data-placement="right" title="Error 503">503<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
 
                 </ul>
             </li>
@@ -85,8 +111,10 @@
         </ul>
 
         <ul class="sidebar-nav sidebar-bottom">
-            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="GitHub">GitHub<span class="sub_icon fa fa-git"></span></a></li>
-            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="LinkedIn">LinkedIn<span class="sub_icon fa fa-linkedin"></span></a></li>
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="GitHub">GitHub<span
+                    class="sub_icon fa fa-git"></span></a></li>
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="LinkedIn">LinkedIn<span
+                    class="sub_icon fa fa-linkedin"></span></a></li>
         </ul>
     </nav>
     <!-- / Sidebar -->
@@ -99,7 +127,7 @@
             <div class="jumbotron">
                 <h1 class="animated bounce">Ivy Bootstrap Theme</h1>
                 <div>
-                <h2 id="home_text"></h2>
+                    <h2 id="home_text"></h2>
                 </div>
                 <p>
                     <a class="scroll-down pointer" id="scrollToAbout"><i class="fa fa-angle-down"></i></a>
@@ -113,28 +141,34 @@
             <div class="row container container-aligned container-bottom-padding">
                 <div class="col-md-12 to-match">
                     <div class="page-title">
-                    <h1 class="animate_waypoint animated">About me</h1>
+                        <h1 class="animate_waypoint animated">About me</h1>
                     </div>
                     <article>
                         <div class="col-md-3 to-match">
                             <figure class="profile_image animate_waypoint animated">
-                                <img src="dist/images/profile_picture.jpg" width="100%" />
+                                <img src="http://placehold.it/190x190" width="100%"/>
                             </figure>
 
 
                         </div>
                         <div class="col-md-9 to-match animate_waypoint animated">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque
-                            aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
-                            pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc
-                            tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-                        </p>
-                        <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
-                            augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus.
-                            Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a
-                            ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede
-                            arcu, dapibus eu, fermentum et, dapibus sed, urna.
-                        </p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.
+                                Pellentesque
+                                aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
+                                pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit
+                                nunc
+                                tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+                            </p>
+                            <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero
+                                eu
+                                augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed
+                                lectus.
+                                Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat,
+                                lacus a
+                                ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus
+                                pede
+                                arcu, dapibus eu, fermentum et, dapibus sed, urna.
+                            </p>
                         </div>
                     </article>
 
@@ -149,11 +183,13 @@
                 <div class="col-md-12 to-match">
                     <article>
                         <div class="col-md-9 to-match animate_waypoint animated">
-                           <h2>Request CV</h2>
+                            <h2>Request CV</h2>
                             <p>A descriptive sentence for the Call To Action (CTA).</p>
                         </div>
                         <div class="col-md-3 to-match animate_waypoint animated">
-                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective" data-modal="cv-modal"><span class="glyphicon glyphicon-arrow-down"></span> Request CV</button>
+                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective"
+                                    data-modal="cv-modal"><span class="fa fa-file-text-o"></span> Request CV
+                            </button>
                         </div>
                     </article>
 
@@ -170,54 +206,120 @@
                         <h1>Featured works</h1>
                     </div>
                     <article>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                        <h4 class="">Project name</h4>
+                        <div class="row portfolio-homepage">
+                            <div class="col-md-12">
+                                <div id="portfolio_carousel_slider" class="carousel slide">
 
-                                        <p class="">short thumbnail description</p>
-                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
 
-                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
-                                </div>
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+
+                                        <div class="item active">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="thumbnail">
+                                                        <div class="caption">
+                                                            <h4>Project type: Website</h4>
+                                                            <p>Short project description...</p>
+                                                            <p><a href="#portfolio_preview_website"
+                                                                  class="morph-btn btn btn-lg btn-default btn-sm">More
+                                                                details...</a></p>
+
+                                                        </div>
+                                                        <img src="http://placehold.it/320x278" alt="Image"
+                                                             class="img-responsive">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="thumbnail">
+                                                        <div class="caption">
+                                                            <h4>Project type: Mobile App</h4>
+                                                            <p>Short project description...</p>
+                                                            <p><a href="#portfolio_preview_mobile"
+                                                                  class="morph-btn btn btn-lg btn-default btn-sm">More
+                                                                details...</a></p>
+
+                                                        </div>
+                                                        <img src="http://placehold.it/320x278" alt="Image"
+                                                             class="img-responsive">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="thumbnail">
+                                                        <div class="caption">
+                                                            <h4>Project type: Video Game</h4>
+                                                            <p>Short project description...</p>
+                                                            <p><a href="#portfolio_preview_video"
+                                                                  class="morph-btn btn btn-lg btn-default btn-sm">More
+                                                                details...</a></p>
+
+                                                        </div>
+                                                        <img src="http://placehold.it/320x278" alt="Image"
+                                                             class="img-responsive">
+                                                    </div>
+                                                </div>
+                                            </div><!--.row-->
+                                        </div><!--.item-->
+
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="thumbnail">
+                                                        <div class="caption">
+                                                            <h4>Project type: Website</h4>
+                                                            <p>Short project description...</p>
+                                                            <p><a href="#portfolio_preview_website"
+                                                                  class="morph-btn btn btn-lg btn-default btn-sm">More
+                                                                details...</a></p>
+
+                                                        </div>
+                                                        <img src="http://placehold.it/320x278" alt="Image"
+                                                             class="img-responsive">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="thumbnail">
+                                                        <div class="caption">
+                                                            <h4>Project type: Mobile App</h4>
+                                                            <p>Short project description...</p>
+                                                            <p><a href="#portfolio_preview_mobile"
+                                                                  class="morph-btn btn btn-lg btn-default btn-sm">More
+                                                                details...</a></p>
+
+                                                        </div>
+                                                        <img src="http://placehold.it/320x278" alt="Image"
+                                                             class="img-responsive">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                                    <div class="thumbnail">
+                                                        <div class="caption">
+                                                            <h4>Project type: Video Game</h4>
+                                                            <p>Short project description...</p>
+                                                            <p><a href="#portfolio_preview_video"
+                                                                  class="morph-btn btn btn-lg btn-default btn-sm">More
+                                                                details...</a></p>
+
+                                                        </div>
+                                                        <img src="http://placehold.it/320x278" alt="Image"
+                                                             class="img-responsive">
+                                                    </div>
+                                                </div>
+                                            </div><!--.row-->
+                                        </div><!--.item-->
+
+
+                                    </div><!--.carousel-inner-->
+
+                                </div><!--.Carousel-->
+
                             </div>
-                            <!-- break -->
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                        <h4 class="">Thumbnail Headline</h4>
-
-                                        <p class="">short thumbnail description</p>
-                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
-
-                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
-                                </div>
+                            <div class="row pull-right carousel-margin-right">
+                                <a data-slide="prev" href="#portfolio_carousel_slider" class="carousel-control">‹</a>
+                                <a data-slide="next" href="#portfolio_carousel_slider" class="carousel-control">›</a>
                             </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="thumbnail">
-                                    <div class="caption">
-                                        <h4 class="">Thumbnail Headline</h4>
-
-                                        <p class="">short thumbnail description</p>
-                                        <p class=""><a href="" class="label label-danger" rel="tooltip" title="Zoom">Zoom</a>
-
-                                            <a href="" class="label label-default" rel="tooltip" title="Download now">Download</a>
-                                        </p>
-                                    </div>
-                                    <img src="http://placehold.it/500x500" alt="Image" class="img-responsive">
-                                </div>
-                            </div>
-
                         </div>
+
 
                     </article>
                 </div>
@@ -237,7 +339,9 @@
                             <p>A descriptive sentence for the Call To Action (CTA).</p>
                         </div>
                         <div class="col-md-3 to-match animate_waypoint animated">
-                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective" data-modal="portfolio-modal"><span class="glyphicon glyphicon-arrow-down"></span> Request Portfolio</button>
+                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective"
+                                    data-modal="portfolio-modal"><span class="fa fa-briefcase"></span> Request Portfolio
+                            </button>
                         </div>
                     </article>
 
@@ -245,7 +349,6 @@
             </div>
         </section>
         <!--/Request Portfolio Section -->
-
 
 
         <!-- Blog Section -->
@@ -326,25 +429,41 @@
                             <form role="form">
                                 <div class="form-group">
                                     <div class="input-group Name">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="text" class="form-control" name="cv_full_name" placeholder="Full name">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-user"></i></span><input type="text"
+                                                                                                   class="form-control"
+                                                                                                   name="cv_full_name"
+                                                                                                   placeholder="Full name">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group phone">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="phone" class="form-control" name="cv_company_name" placeholder="Company name">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-lock"></i></span><input type="phone"
+                                                                                                   class="form-control"
+                                                                                                   name="cv_company_name"
+                                                                                                   placeholder="Company name">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group phone">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input type="phone" class="form-control" name="cv_phone_number" placeholder="Phone number">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-earphone"></i></span><input type="phone"
+                                                                                                       class="form-control"
+                                                                                                       name="cv_phone_number"
+                                                                                                       placeholder="Phone number">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <div class="input-group email">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input type="email" class="form-control" name="cv_email_address" placeholder="Email address">
+                                        <span class="input-group-addon"><i
+                                                class="glyphicon glyphicon-envelope"></i></span><input type="email"
+                                                                                                       class="form-control"
+                                                                                                       name="cv_email_address"
+                                                                                                       placeholder="Email address">
                                     </div>
                                 </div>
                             </form>
@@ -368,7 +487,8 @@
                             <p>A descriptive sentence for the Call To Action (CTA).</p>
                         </div>
                         <div class="col-md-3 to-match animate_waypoint animated">
-                            <button class="btn btn-lg btn-default ca_button md-trigger md-setperspective" data-modal="portfolio-modal"><span class="glyphicon glyphicon-arrow-down"></span> Estimate price</button>
+                            <a href="#" class="btn btn-lg btn-default ca_button"><span class="fa fa-compress"></span>
+                                Estimate price</a>
                         </div>
                     </article>
 
@@ -397,19 +517,16 @@
 
                 </div>
             </div>
-            </footer>
+        </footer>
         <!--/Footer Section -->
     </div>
 
 
 </div>
 
-<!-- Back to Top -->
-<a href="#0" class="cd-top cd-is-visible">Top</a>
 
 <!-- Overlay element -->
 <div class="md-overlay"></div>
-
 
 <!-- Request CV -->
 <div class="md-modal md-effect-19" id="cv-modal">
@@ -420,34 +537,40 @@
                 <form role="form">
                     <div class="form-group">
                         <div class="input-group Name">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="text" class="form-control" name="cv_full_name" placeholder="Full name">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input
+                                type="text" class="form-control" name="cv_full_name" placeholder="Full name">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group phone">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="phone" class="form-control" name="cv_company_name" placeholder="Company name">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input
+                                type="phone" class="form-control" name="cv_company_name" placeholder="Company name">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group phone">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input type="phone" class="form-control" name="cv_phone_number" placeholder="Phone number">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input
+                                type="phone" class="form-control" name="cv_phone_number" placeholder="Phone number">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group email">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input type="email" class="form-control" name="cv_email_address" placeholder="Email address">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input
+                                type="email" class="form-control" name="cv_email_address" placeholder="Email address">
                         </div>
                     </div>
                 </form>
             </ul>
             <div class="md-content">
                 <div class="clearfix">
-                    <div class="btn-group inline pull-right" >
+                    <div class="btn-group inline pull-right">
                         <button class="btn btn-small md-close md-button">Close me!</button>
-                        <button class="btn btn-small  md-button" id="cv_submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit</button>
+                        <button class="btn btn-small  md-button" id="cv_submit"
+                                data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit
+                        </button>
                     </div>
                 </div>
             </div>
@@ -465,40 +588,325 @@
                 <form role="form">
                     <div class="form-group">
                         <div class="input-group Name">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="text" class="form-control" name="portfolio_full_name" placeholder="Full name">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input
+                                type="text" class="form-control" name="portfolio_full_name" placeholder="Full name">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group phone">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="phone" class="form-control" name="portfolio_company_name" placeholder="Company name">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input
+                                type="tel" class="form-control" name="portfolio_company_name"
+                                placeholder="Company name">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group phone">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input type="phone" class="form-control" name="portfolio_phone_number" placeholder="Phone number">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input
+                                type="phone" class="form-control" name="portfolio_phone_number"
+                                placeholder="Phone number">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="input-group email">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input type="email" class="form-control" name="portfolio_email_address" placeholder="Email address">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input
+                                type="email" class="form-control" name="portfolio_email_address"
+                                placeholder="Email address">
                         </div>
                     </div>
                 </form>
             </ul>
             <div class="md-content">
                 <div class="clearfix">
-                    <div class="btn-group inline pull-right" >
+                    <div class="btn-group inline pull-right">
                         <button class="btn btn-small md-close md-button">Close me!</button>
-                        <button class="btn btn-small  md-button" id="portfolio_submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit</button>
+                        <button class="btn btn-small  md-button" id="portfolio_submit"
+                                data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- Portfolio Modal Preview Website -->
+<div id="portfolio_preview_website" class="morph-modal">
+    <div class="modal-content">
+        <div class="portfolio-page-title">
+            <h1>Project Type: Website</h1>
+        </div>
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac bibendum risus, id placerat lectus. Cras
+                vel condimentum augue, at dignissim sem. Pellentesque finibus, massa at sodales vulputate, mi sapien
+                blandit magna, et mollis erat metus a tellus. Proin molestie, urna vitae commodo tincidunt, quam leo
+                luctus diam, a tincidunt dui libero eget lacus. Fusce sodales tortor eu leo pulvinar dictum. Proin et
+                ante dolor. Etiam sed blandit justo, vel tincidunt justo. Donec sed massa purus. Cras convallis nisl a
+                nisl iaculis, eu blandit leo varius. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. In hac habitasse platea dictumst.</p>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-9">
+
+                <div class="row">
+                    <div class="browser-mockup with-url">
+                        <div class="row carousel_project_type_website">
+                            <div id="carousel_project_type_website" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel_project_type_website" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel_project_type_website" data-slide-to="1"></li>
+                                    <li data-target="#carousel_project_type_website" data-slide-to="2"></li>
+                                    <li data-target="#carousel_project_type_website" data-slide-to="3"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="http://placehold.it/699x750" class="img-responsive">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="http://placehold.it/699x750"  class="img-responsive">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="http://placehold.it/699x750"  class="img-responsive">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="http://placehold.it/699x750"  class="img-responsive">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <h3>Client</h3>
+                </div>
+
+                <div class="row">
+                    <p><a href="#">Client name</a></p>
+                </div>
+
+                <div class="row">
+                    <h3>Website</h3>
+                    <p><a href="#">http://example.com</a></p>
+                </div>
+
+                <div class="row">
+                    <h3>Technology</h3>
+                    <ul class="tags">
+                        <li><a href="#">Laravel</a></li>
+                        <li><a href="#">Angular 2</a></li>
+                        <li><a href="#">Ionic</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <button class="close-modal"></button>
+    <span class="morph-background"></span>
+</div>
+
+<!-- Portfolio Modal Preview Mobile App -->
+<div id="portfolio_preview_mobile" class="morph-modal">
+    <div class="modal-content">
+        <div class="portfolio-page-title">
+            <h1>Project Type: Mobile App</h1>
+        </div>
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac bibendum risus, id placerat lectus. Cras
+                vel condimentum augue, at dignissim sem. Pellentesque finibus, massa at sodales vulputate, mi sapien
+                blandit magna, et mollis erat metus a tellus. Proin molestie, urna vitae commodo tincidunt, quam leo
+                luctus diam, a tincidunt dui libero eget lacus. Fusce sodales tortor eu leo pulvinar dictum. Proin et
+                ante dolor. Etiam sed blandit justo, vel tincidunt justo. Donec sed massa purus. Cras convallis nisl a
+                nisl iaculis, eu blandit leo varius. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. In hac habitasse platea dictumst.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <h3>Client</h3>
+                </div>
+
+                <div class="row">
+                    <p><a href="#">Client name</a></p>
+                </div>
+
+                <div class="row">
+                    <h3>Website</h3>
+                    <p><a href="#">http://example.com</a></p>
+                </div>
+
+                <div class="row">
+                    <h3>Technology</h3>
+                    <ul class="tags">
+                        <li><a href="#">Laravel</a></li>
+                        <li><a href="#">Angular 2</a></li>
+                        <li><a href="#">Ionic</a></li>
+                        <li><a href="#">HTML5</a></li>
+                        <li><a href="#">CSS 3</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="row">
+                    <div id="phone">
+                        <div id="base"></div>
+                        <div id="sleep"></div>
+                        <div id="screen">
+                            <div class="row carousel_project_type_mobile">
+                                <div id="carousel_project_type_mobile" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel_project_type_mobile" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel_project_type_mobile" data-slide-to="1"></li>
+                                        <li data-target="#carousel_project_type_mobile" data-slide-to="2"></li>
+                                        <li data-target="#carousel_project_type_mobile" data-slide-to="3"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="http://placehold.it/245x430" class="img-responsive" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="http://placehold.it/245x430"  class="img-responsive" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="http://placehold.it/245x430"  class="img-responsive" />
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="http://placehold.it/245x430"  class="img-responsive" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sideButton"></div>
+                        <div id="home_phone"></div>
+                        <div id="cam"></div>
+                        <div id="ear"></div>
+                        <div id="bar"></div>
+                        <div id="shine"></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="row">
+                    <h3>Download App</h3>
+                </div>
+
+                <div class="row">
+                    <img src="dist/images/qr.svg" class="img-responsive"/>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <button class="close-modal"></button>
+    <span class="morph-background"></span>
+</div>
+
+
+<!-- Portfolio Modal Preview Video Game -->
+<div id="portfolio_preview_video" class="morph-modal">
+    <div class="modal-content">
+        <div class="portfolio-page-title">
+            <h1>Project Type: Video Game</h1>
+        </div>
+        <div class="row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac bibendum risus, id placerat lectus. Cras
+                vel condimentum augue, at dignissim sem. Pellentesque finibus, massa at sodales vulputate, mi sapien
+                blandit magna, et mollis erat metus a tellus. Proin molestie, urna vitae commodo tincidunt, quam leo
+                luctus diam, a tincidunt dui libero eget lacus. Fusce sodales tortor eu leo pulvinar dictum. Proin et
+                ante dolor. Etiam sed blandit justo, vel tincidunt justo. Donec sed massa purus. Cras convallis nisl a
+                nisl iaculis, eu blandit leo varius. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. In hac habitasse platea dictumst.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="row">
+
+                    <div class="monitor">
+                        <div class="bevel">
+                            <div class="screen_monitor">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/U_ZRj_UEBYU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="stand"></div>
+                        <div class="base"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <h3>Client</h3>
+                </div>
+
+                <div class="row">
+                    <p><a href="#">Client name</a></p>
+                </div>
+
+                <div class="row">
+                    <h3>Website</h3>
+                    <p><a href="#">http://example.com</a></p>
+                </div>
+
+                <div class="row">
+                    <h3>Technology</h3>
+                    <ul class="tags">
+                        <li><a href="#">Laravel</a></li>
+                        <li><a href="#">Angular 2</a></li>
+                        <li><a href="#">Ionic</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <button class="close-modal"></button>
+    <span class="morph-background"></span>
+</div>
+<!-- Back to Top -->
+<a href="#0" class="cd-top cd-is-visible" id="go_top">Top</a>
+
 
 <!-- jQuery -->
 <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -515,22 +923,23 @@
 <script src="node_modules/typed.js/dist/typed.min.js"></script>
 <script src="node_modules/desandro-classie/classie.js"></script>
 
+
 <!-- Custom JS -->
 <script src="dist/scripts/main.min.js"></script>
 
 <script>
 
     //Submit CV Request
-    $('#cv_submit').on('click', function() {
+    $('#cv_submit').on('click', function () {
 
         //Run animation
         var $this = $(this);
         $this.button('loading');
-        setTimeout(function() {
+        setTimeout(function () {
             $this.button('reset');
         }, 3000);
 
-       //Show notification
+        //Show notification
         $.toast({
             heading: 'Success',
             text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
@@ -542,12 +951,12 @@
     });
 
     //Submit Portfolio Request
-    $('#portfolio_submit').on('click', function() {
+    $('#portfolio_submit').on('click', function () {
 
         //Run animation
         var $this = $(this);
         $this.button('loading');
-        setTimeout(function() {
+        setTimeout(function () {
             $this.button('reset');
         }, 3000);
 
@@ -557,7 +966,7 @@
             text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
             showHideTransition: 'slide',
             icon: 'success',
-            position: 'bottom-right',
+            position: 'bottom-right'
 
         })
     });
