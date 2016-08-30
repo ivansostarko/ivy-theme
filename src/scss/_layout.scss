@@ -305,3 +305,49 @@ footer {
   }
 
 }
+
+.contacts-homepage {
+
+  .form-group {
+    margin-bottom: 20px !important;
+  }
+  form select, .form_custom select {
+    padding: 0px !important;
+    font-size: 13px;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 0px !important;
+    font-size: 16px !important;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent !important;
+    border: none !important;
+    background-image: none;
+    border-bottom: 1px solid #423A6B !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    background: $primary-color;
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+  }
+  .button-block {
+    display: block;
+    padding: 7px 15px;
+    margin: 10px auto;
+  }
+}
