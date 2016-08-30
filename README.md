@@ -21,4 +21,17 @@ Make sure these are installed first.
 * [Node.js](http://nodejs.org)
 * [Gulp](http://gulpjs.com) 
 
+#### Clone repository
+```sh
+git clone https://github.com/IvanSostarko/ivy-theme.git
+```
 
+#### Install node modules
+```sh
+npm install
+```
+
+#### Run GULP
+```sh
+gulp
+```
