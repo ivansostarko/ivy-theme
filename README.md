@@ -21,7 +21,7 @@ Make sure these are installed first.
 * [Node.js](http://nodejs.org)
 * [Gulp](http://gulpjs.com) 
 
-#### Clone repository
+### Clone repository
 ```sh
 git clone https://github.com/IvanSostarko/ivy-theme.git
 ```
@@ -34,3 +34,21 @@ git clone https://github.com/IvanSostarko/ivy-theme.git
 	* `gulp` manually compiles files and runs unit tests.
 	* `gulp watch` automatically compiles files, runs unit tests, and applies changes using [LiveReload](http://livereload.com/).
 	* `gulp test` compiles files and runs unit tests.
+	
+## Pages
+
+- Homepage
+-- About me
+-- Featured works
+-- Latest posts
+-- Contact
+
+- Bootstrap components (Forms, Buttons & Icons, Modals, Popovers, Tooltips, Alerts, Notifications, Labels, Progress Bars)
+- Blog
+- Blog Single
+- Portfolio
+- Portfolio Single
+- CV 
+- Password page
+- Price Estimate page
+- Errors
