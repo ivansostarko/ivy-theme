@@ -242,3 +242,66 @@ footer {
 
 
 }
+
+.posts-homepage {
+  .post
+  {
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 0 0 1px #CCC;
+  }
+
+  .post .content
+  {
+    padding: 15px;
+  }
+  .post .datetime
+  {
+    font-size: 13px;
+    color: #737373;
+    padding: 5px 0px 10px;
+    font-weight:700;
+  }
+  .post .post-img-content
+  {
+    height: 200px;
+    position: relative;
+  }
+  .post .post-img-content img
+  {
+    position: absolute;
+  }
+  .post .post-title
+  {
+    width:100%;
+    bottom: 0;
+    z-index: 2;
+    position: absolute;
+
+  }
+  .post .post-title a:link, a:visited
+  {
+   color:white;
+
+  }
+  .post .post-title b
+  {
+    background-color: rgba(51, 51, 51, 0.58);
+    display: inherit;
+    color: #FFF;
+    padding: 10px 15px;
+    word-wrap:break-word;
+
+  }
+  .all_posts {
+    background: $primary-color;
+    color:white;
+    margin-top:3%;
+    margin-right:3%;
+  }
+  .btn-all_posts {
+    color: #fff;
+    background-color: $primary-color;
+  }
+
+}
