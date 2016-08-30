@@ -38,7 +38,7 @@ git clone https://github.com/IvanSostarko/ivy-theme.git
 ## Pages
 
 - Homepage (About me, Featured works, Latest posts, Contact)
-- Bootstrap components (Forms, Buttons & Icons, Modals, Popovers, Tooltips, Alerts, Notifications, Labels, Progress Bars)
+- Bootstrap components (Forms, Buttons & Icons, Modals, Popovers, Tooltips, Alerts, Notifications, Labels, Progress Bars...)
 - Blog
 - Blog Single
 - Portfolio
