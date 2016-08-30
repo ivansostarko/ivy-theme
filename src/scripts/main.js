@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+    //Remove Later
     $('#wrapper').addClass('loaded');
 
     //Init functions
@@ -173,6 +173,7 @@ $(document).ready(function () {
         })();
     }
 
+    //Open portfolio homepage function
     function openPortfolioModal() {
         var modalTrigger = $(".morph-btn");
         var modalWindow = $(".morph-modal");
@@ -182,7 +183,7 @@ $(document).ready(function () {
         function getElementPosition(getSelectedModalTrigger) {
             var top = getSelectedModalTrigger.offset().top - $(window).scrollTop();
             var left = getSelectedModalTrigger.offset().left;
-            //return an array
+
             return [top, left];
         }
 
@@ -196,9 +197,10 @@ $(document).ready(function () {
 
 
         function scaleValue(firstCoord, elSize, windowSize) {
-            var secondCoord = windowSize - firstCoord - elSize; //bottom
+            var secondCoord = windowSize - firstCoord - elSize;
             var maxCoord = Math.max(firstCoord, secondCoord);
-            var scaleValue = (maxCoord * 2 + elSize) / elSize; //final size of the span element
+            var scaleValue = (maxCoord * 2 + elSize) / elSize;
+
             return Math.ceil(scaleValue * 10) / 10;
         }
 
@@ -207,6 +209,8 @@ $(document).ready(function () {
 
             //hide scroll body
             $('body').css('overflow', 'hidden');
+
+            //hide scroll to top when modal box is running
             $('#go_top').hide();
 
             var selectedModalTrigger = $(this);
@@ -233,9 +237,7 @@ $(document).ready(function () {
                 selectedModalWindow.addClass("modal-visible");
             });
 
-            // function showContent(){
-            //   selectedModalWindow.addClass("modal-visible");
-            // }
+
         }
 
         modalTrigger.on("click", launchModal);
@@ -243,8 +245,11 @@ $(document).ready(function () {
 
         modalWindow.on("click", ".close-modal", closeModal);
         function closeModal(event) {
+
             //show scroll on body
             $('body').css('overflow', 'scroll');
+
+            //show scroll to top
             $('#go_top').show();
 
 
