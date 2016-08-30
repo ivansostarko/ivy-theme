@@ -26,12 +26,11 @@ Make sure these are installed first.
 git clone https://github.com/IvanSostarko/ivy-theme.git
 ```
 
-#### Install node modules
-```sh
-npm install
-```
+### Quick Start
 
-#### Run GULP
-```sh
-gulp
-```
+1. In bash/terminal/command line, `cd` into your project directory.
+2. Run `npm install` to install required files.
+3. When it's done installing, run one of the task runners to get going:
+	* `gulp` manually compiles files and runs unit tests.
+	* `gulp watch` automatically compiles files, runs unit tests, and applies changes using [LiveReload](http://livereload.com/).
+	* `gulp test` compiles files and runs unit tests.
