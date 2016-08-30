@@ -73,7 +73,7 @@ $(document).ready(function () {
         $back_to_top.on('click', function (event) {
             event.preventDefault();
             $('body,html').animate({
-                    scrollTop: 0,
+                    scrollTop: 0
                 }, scroll_top_duration
             );
         });
@@ -86,7 +86,7 @@ $(document).ready(function () {
             typeSpeed: 50,
             backDelay: 500,
             loop: true,
-            loopCount: false,
+            loopCount: false
         });
     }
 
@@ -203,7 +203,7 @@ $(document).ready(function () {
         }
 
         function launchModal(e) {
-            e.preventDefault
+            e.preventDefault;
 
             //hide scroll body
             $('body').css('overflow', 'hidden');
@@ -226,7 +226,7 @@ $(document).ready(function () {
             selectedMorphBackground.css({
                 "top": triggerPosition[0] + "px",
                 "left": triggerPosition[1] + "px",
-                "transform": "scaleX(" + scaleValues[1] + ") scaleY(" + scaleValues[0] + ")",
+                "transform": "scaleX(" + scaleValues[1] + ") scaleY(" + scaleValues[0] + ")"
                 //"border":"1px solid red"
             }).one("transitionend", function () {
                 //one works like on, but listens to the callback only once
