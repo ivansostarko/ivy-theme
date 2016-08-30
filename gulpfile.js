@@ -62,6 +62,12 @@ gulp.task('scripts', function(){
 });
 
 
+gulp.task('travis', ['bs-reload', 'images', 'styles', 'scripts'], function(){
+    gulp.watch("src/scss/**/*.scss", ['styles', 'styles']);
+    gulp.watch("src/scripts/**/*.js", ['scripts']);
+    gulp.watch("*.html", ['bs-reload']);
+});
+
 gulp.task('default', ['browser-sync', 'bs-reload', 'images', 'styles', 'scripts'], function(){
     gulp.watch("src/scss/**/*.scss", ['styles', 'styles']);
     gulp.watch("src/scripts/**/*.js", ['scripts']);
