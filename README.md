@@ -10,5 +10,15 @@
 
 ## Demo
 ![](https://raw.githubusercontent.com/IvanSostarko/ivy-theme/master/src/images/screenshoot.jpg)
-Check online demo: * [http://demo.ivan-sostarko.com/ivy-theme/](http://demo.ivan-sostarko.com/ivy-theme/)
+
+#### Check online demo:  [http://demo.ivan-sostarko.com/ivy-theme/](http://demo.ivan-sostarko.com/ivy-theme/)
+
+## Getting Started
+
+### Dependencies
+Make sure these are installed first.
+
+* [Node.js](http://nodejs.org)
+* [Gulp](http://gulpjs.com) 
+
 
