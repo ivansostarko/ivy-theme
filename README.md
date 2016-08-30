@@ -46,4 +46,15 @@ git clone https://github.com/IvanSostarko/ivy-theme.git
 - CV 
 - Password page
 - Price Estimate page
-- Errors
+- Errors pages
+
+## Contributing
+#### Bug Reports & Feature Requests
+
+Please use the [issue tracker](https://github.com/IvanSostarko/ivy-theme/issues) to report any bugs or file feature requests.
+
+
+## License
+>You can check out the full license [here](https://github.com/IvanSostarko/ivy-theme/blob/master/LICENSE)
+
+This project is licensed under the terms of the **MIT** license.
