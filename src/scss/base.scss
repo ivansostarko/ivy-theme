@@ -3,10 +3,11 @@
 	Ivy Bootstrap theme
 	========================================
 
-	@author			: ivan Sostarko
+	@author			: Ivan Sostarko
+	@email          : ivan.sostarko@hotmail.com
 	@version		: v1.0
-	@date-create	: 09/01/2014
-	@last-update	: 09/24/2014
+	@date-create	: 10/10/2016
+	@last-update	: 10/10/2016
 
 */
 
@@ -16,19 +17,41 @@
 ===================================*/
 $primary-color: #222;
 $background-color: #edeff0;
+$body-color: rgb(107, 110, 128);
+
+$sidebar-color: #999;
 $sidebar-background: #222;
 $sidebar-background-hover: #fff;
 $sidebar-border: #080808;
+$sidebar-border-top: #373737;
+$sidebar-border-bottom:#1A1A1A;
+$sidebar-nav: #999999;
+$sidebar-nav-hover: rgba(255, 255, 255, 0.2);
+
 $toolTipColor: #222;
 $toolTipTextColor: #fff;
 $toolTipShadow: 0px 3px 5px -2px rgba(0,0,0,0.4);
 $scrool_to_top_background: rgba(34, 34, 34, 0.8);
 
+/* Fonts
+===================================*/
+$primary-font:"Open Sans", sans-serif;
+$secondary-font: "Kaushan Script", cursive;
+
+/* Colours
+===================================*/
+$light: #ffffff;
+$stable: #ccc;
+$positive: #387ef5;
+$calm: #11c1f3;
+$balanced: #33cd5f;
+$energized: #ffc900;
+$assertive: #ef473a;
+$dark: #444444;
 
 /* Sass files
 ===================================*/
 @import 'layout';
-@import 'bootstrap';
 @import 'tooltip';
 @import 'scroll_to_top';
 @import 'modal';
