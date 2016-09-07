@@ -285,10 +285,6 @@ section {
 /* Homepage
 ===================================*/
 section.home {
-  background: url('../images/background.jpg');
-  filter: sepia(30%);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   display: flex;
 }
@@ -342,6 +338,22 @@ section.home {
 
 #home_text {
   height: 33px;
+width:100%;
+}
+
+#canvas-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 /* Home - About me

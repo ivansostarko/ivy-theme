@@ -106,9 +106,17 @@ $(document).ready(function () {
 
     //Waypoints animations
     function waypoints() {
-        $('.animate_waypoint').waypoint(function () {
-            $('.animate_waypoint').addClass('fadeInDown');
+
+        //bounceInLeft animation class
+        $('.animate_waypoint_bounceInLeft').waypoint(function () {
+            $('.animate_waypoint_bounceInLeft').addClass('bounceInLeft');
         }, {offset: '100%'});
+
+        //fadeInDown animation class
+        $('.animate_waypoint_fadeInDown').waypoint(function () {
+            $('.animate_waypoint_fadeInDown').addClass('fadeInDown');
+        }, {offset: '100%'});
+
     }
 
 
