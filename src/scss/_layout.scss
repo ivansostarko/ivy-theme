@@ -336,9 +336,13 @@ section.home {
   text-align: center;
 }
 
+.scroll-down:hover {
+  color: $light !important;
+}
+
 #home_text {
   height: 33px;
-width:100%;
+  width: 100%;
 }
 
 #canvas-image {
@@ -360,11 +364,8 @@ width:100%;
 ===================================*/
 .about-homepage {
   .profile_image {
-    position: relative;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
+    width: 100%;
+    margin: 0;
     -webkit-box-shadow: rgba(0, 0, 0, .2) 3px 5px 5px;
     -moz-box-shadow: rgba(0, 0, 0, .2) 3px 5px 5px;
     box-shadow: rgba(0, 0, 0, .2) 3px 5px 5px;
@@ -549,5 +550,37 @@ footer {
     left: 200px;
     width: 200px;
     transition: all .4s ease 0s;
+  }
+  #home_text {
+    font-size: 20px;
+  }
+
+  .profile_image {
+    margin-bottom: 25px !important;
+  }
+
+  .page-title {
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
+  .page-title h1 {
+    font-size: 25px;
+  }
+  .carousel-margin-right {
+    width:50%;
+    margin-right: auto;
+    margin-left:auto;
+  }
+  .posts-homepage {
+    .post {
+      margin-bottom: 25px;
+    }
+    .post-title {
+      bottom: 29px;
+    }
+    .content {
+      padding: 0px 15px 15px 15px;
+    }
+
   }
 }

@@ -128,7 +128,7 @@
                 <canvas id="canvas-image"></canvas>
                 <h1 class="animated bounce">Ivy Bootstrap Theme</h1>
 
-                    <h2 class="animated bounce" id="home_text"></h2>
+                <h2 class="animated bounce" id="home_text"></h2>
 
                 <p>
                     <a class="scroll-down pointer" id="scrollToAbout"><i class="fa fa-angle-down"></i></a>
@@ -592,7 +592,7 @@
             <div class="md-content">
                 <div class="clearfix">
                     <div class="btn-group inline pull-right">
-                        <button class="btn btn-small md-close md-button">Close me!</button>
+                        <button class="btn btn-small md-close md-button">Close</button>
                         <button class="btn btn-small  md-button" id="cv_submit"
                                 data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit
                         </button>
@@ -646,7 +646,7 @@
             <div class="md-content">
                 <div class="clearfix">
                     <div class="btn-group inline pull-right">
-                        <button class="btn btn-small md-close md-button">Close me!</button>
+                        <button class="btn btn-small md-close md-button">Close</button>
                         <button class="btn btn-small  md-button" id="portfolio_submit"
                                 data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit
                         </button>
@@ -814,19 +814,19 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="http://placehold.it/245x430" class="img-responsive"/>
+                                            <img src="http://placehold.it/245x430" class="img-responsive" width="100%"/>
                                         </div>
 
                                         <div class="item">
-                                            <img src="http://placehold.it/245x430" class="img-responsive"/>
+                                            <img src="http://placehold.it/245x430" class="img-responsive" width="100%"/>
                                         </div>
 
                                         <div class="item">
-                                            <img src="http://placehold.it/245x430" class="img-responsive"/>
+                                            <img src="http://placehold.it/245x430" class="img-responsive" width="100%"/>
                                         </div>
 
                                         <div class="item">
-                                            <img src="http://placehold.it/245x430" class="img-responsive"/>
+                                            <img src="http://placehold.it/245x430" class="img-responsive" width="100%"/>
                                         </div>
                                     </div>
 
@@ -889,8 +889,10 @@
                     <div class="monitor">
                         <div class="bevel">
                             <div class="screen_monitor">
-                                <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/U_ZRj_UEBYU"
-                                        frameborder="0" allowfullscreen></iframe>-->
+                                <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/U_ZRj_UEBYU" frameborder="0" allowfullscreen></iframe>-->
+                                <div class="screen_monitor_content" >
+                                    <img src="http://placehold.it/611x335/" width="100%" height="100%"/>
+                                    </div>
                             </div>
                         </div>
                         <div class="stand"></div>
@@ -932,6 +934,7 @@
     <button class="close-modal"></button>
     <span class="morph-background"></span>
 </div>
+
 <!-- Back to Top -->
 <a href="#0" class="cd-top cd-is-visible" id="go_top">Top</a>
 
@@ -1007,7 +1010,7 @@
         direction: 'top-bottom',
         opacity: [1, .5, 0],
         isPausedWhenNotInView: true,
-        states : {
+        states: {
             "default-state": {
                 gradients: [
                     ['#485563', '#29323c', '#29323c'],
@@ -1020,5 +1023,4 @@
 </script>
 
 </body>
-
 </html>

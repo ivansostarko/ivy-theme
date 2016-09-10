@@ -358,40 +358,33 @@
 @media (max-width:767px) {
   #phone {
     margin-bottom: 100px;
-    height: 600px;
-    width: 285px;
+    height: 450px;
+    width: 220px;
   }
   #base {
-    margin-top: 12px;
-    margin-left: 16px;
-    height: 600px;
-    width: 285px;
+
+    height: 450px;
+    width: 220px;
   }
 
   #ear {
-    height: 12px;
-    width: 65px;
-    margin-left: 120px;
-    margin-top: 56px;
+  visibility: hidden;
   }
 
   #sleep {
     height: 3px;
     width: 45px;
-    margin-left: 211px;
-    margin-top: 8px;
+    margin-left: 150px;
+    margin-top: 10px;
   }
   #screen {
     margin-left: 36px;
     margin-top: 100px;
-    height: 430px;
-    width: 245px;
+    height: 50%;
+    width: 70%;
   }
   #home_phone {
-    margin-left: 132px;
-    margin-top: 545px;
-    height: 53px;
-    width: 53px;
+    visibility: hidden;
   }
   #home_phone:after {
     content: '';
@@ -401,23 +394,18 @@
     width: 20px;
   }
   #shine {
-    margin-top: 100px;
-    margin-left: 145px;
-    width: 0;
-    height: 0;
+    margin-left:0;
+    visibility: hidden;
   }
   #bar {
     height: 15px;
-    width: 245px;
+    width: 190px;
     position: absolute;
     margin-top: 100px;
     margin-left: 36px;
   }
   #cam {
-    margin-left: 155px;
-    margin-top: 35px;
-    height: 11px;
-    width: 11px;
+    visibility: hidden;
   }
   #sideButton {
     height: 27px;
@@ -474,30 +462,7 @@
   margin-bottom: 30px;
 }
 
-@media (max-width:767px) {
-  .monitor {
-   display: none;
-  }
 
-  .bevel {
-    display: none;
-  }
-
-  .screen_monitor {
-    display:inline;
-  }
-
-  .stand {
-    display: none;
-  }
-
-  .base {
-    display: none;
-  }
-
-
-
-}
 
 .portfolio-page-title {
   display: block;
@@ -603,4 +568,34 @@
     margin: 0;
     background-color: $primary-color;
   }
+}
+
+@media (max-width:767px) {
+  .monitor {
+    display: inline;
+  }
+
+  .bevel {
+    display: inline;
+    background-color: transparent;
+  }
+
+  .screen_monitor {
+    display:inline;
+  }
+
+  .stand {
+    display: none;
+  }
+
+  .base {
+    display: inline;
+
+  }
+  .screen_monitor_content {
+    display: block;
+  }
+
+
+
 }

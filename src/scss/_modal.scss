@@ -42,7 +42,8 @@ perspective effects (not including the modals and the overlay).
   border-top:none;
   border-left:none;
   border-right:none;
-  border-bottom:2px solid rgba(255, 255, 255, 0.5);
+  border-bottom:1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0px;
 }
 .md-modal > .btn:hover {
   color:rgba(255, 255, 255, 0.6);
@@ -55,14 +56,23 @@ font-weight: 100;
   border:2px solid rgba(255, 255, 255, 0.5);
   background: transparent;
   margin-right:5px;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
+.md-button:hover {
+color:$dark;
+  background:$light;
+}
 .md-modal .input-group-addon:first-child{
   background-color:transparent;
   border-top:none;
   border-left:none;
   border-right:none;
-  border-bottom:2px solid rgba(255, 255, 255, 0.5);
+  border-bottom:1px solid rgba(255, 255, 255, 0.5);
+  border-radius:0px;
 }
 .md-show {
   visibility: visible;
@@ -90,7 +100,7 @@ font-weight: 100;
 
 /* Content styles */
 .md-content {
-  color: #fff;
+  color: $light;
   background: $primary-color;
   position: relative;
   border-radius: 3px;
@@ -757,4 +767,16 @@ font-weight: 100;
   margin: 80px auto 0 auto;
   text-align: center;
   width: 660px;
+}
+
+@media (max-width: 767px) {
+
+  .md-modal {
+    left:60%;
+    height:100vh;
+  }
+  .md-button {
+
+font-size:0.8em;
+  }
 }
