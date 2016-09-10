@@ -112,11 +112,21 @@ section {
 
 .ca_button {
   margin-top: 10%;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+.ca_button:hover {
+  background-color:$primary-color;
+  border-color:$dark;
+  color: $stable;
 }
 
 .btn {
   border-radius: 0;
 }
+
 
 .content-header h1 {
   margin: 0;
@@ -453,8 +463,15 @@ section.home {
   .btn-all_posts {
     color: $light;
     background-color: $primary-color;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
   }
-
+  .btn-all_posts:hover {
+    background-color:$stable;
+    color:$dark;
+  }
 }
 
 /* Home - Contacts
@@ -499,6 +516,18 @@ section.home {
     display: block;
     padding: 7px 15px;
     margin: 10px auto;
+  }
+  .btn-contact {
+    color: $light;
+    background-color: $primary-color;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
+  .btn-contact:hover {
+    background-color:$stable;
+    color:$dark;
   }
 }
 
