@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //Remove Later
+    //Remove later
     $('#wrapper').addClass('loaded');
 
     //Init functions
@@ -18,7 +18,7 @@ $(document).ready(function () {
     carousel_project_type_website();
 
 
-    //Page loader
+    //Page loader function
     function loader() {
         $(window).bind("load", function () {
             $('#wrapper').addClass('loaded');
@@ -34,20 +34,20 @@ $(document).ready(function () {
         });
     }
 
-    //Show tooltip
+    //Show tooltip function
     function showToolTip() {
         $('[data-toggle="tooltip"]').tooltip();
     }
 
 
-    //Scroll function
+    //Scroller for sidemenu function
     function scroll() {
         $('#sidebar').activescroll({
             active: "highlight"
         });
     }
 
-    //Scroll to about page
+    //Scroll to about page function
     function scrollToAbout() {
         $("#scrollToAbout").click(function () {
             $('html, body').animate({
@@ -56,7 +56,7 @@ $(document).ready(function () {
         });
     }
 
-    //Back to Top function
+    //Back to top function
     function backToTop() {
         var offset = 300,
             offset_opacity = 1200,
@@ -79,7 +79,7 @@ $(document).ready(function () {
         });
     }
 
-    //Home text
+    //Home text function
     function homeText() {
         $("#home_text").typed({
             strings: ["Forever free, open source, and easy to use.", " You can use Ivy for any purpose, even comercially!.", "Ivy is built for the Bootstrap 3."],
@@ -90,21 +90,20 @@ $(document).ready(function () {
         });
     }
 
-    //Caption
+    //Caption function
     function caption() {
         $('.thumbnail').hover(
             function () {
-                $(this).find('.caption').slideDown(250); //.fadeIn(250)
+                $(this).find('.caption').slideDown(250);
             },
             function () {
-                $(this).find('.caption').slideUp(250); //.fadeOut(205)
+                $(this).find('.caption').slideUp(250);
             }
         );
-
     }
 
 
-    //Waypoints animations
+    //Waypoints animations function
     function waypoints() {
 
         //bounceInLeft animation class
@@ -120,7 +119,7 @@ $(document).ready(function () {
     }
 
 
-    //Custom modal
+    //Custom modal function
     function customModal() {
         /**
          * modalEffects.js v1.0.0
@@ -181,12 +180,13 @@ $(document).ready(function () {
         })();
     }
 
-    //Open portfolio homepage function
+    //Open portfolio homepage function function
     function openPortfolioModal() {
+        /* https://codyhouse.co/gem/morphing-modal-window/ */
+
         var modalTrigger = $(".morph-btn");
         var modalWindow = $(".morph-modal");
         var closeTrigger = $(".close-modal");
-
 
         function getElementPosition(getSelectedModalTrigger) {
             var top = getSelectedModalTrigger.offset().top - $(window).scrollTop();
@@ -222,35 +222,27 @@ $(document).ready(function () {
             $('#go_top').hide();
 
             var selectedModalTrigger = $(this);
-            //get href
             var modalId = selectedModalTrigger.attr("href");
 
             var selectedModalWindow = modalWindow.filter(modalId);
             var selectedMorphBackground = selectedModalWindow.children(".morph-background");
             selectedModalWindow.addClass("open-modal");
-
-            //run trigger button position function (pass in the element)
             var triggerPosition = getElementPosition(selectedModalTrigger);
 
             var scaleValues = evalScale(selectedMorphBackground, triggerPosition);
 
-            //use array index to locate position
             selectedMorphBackground.css({
                 "top": triggerPosition[0] + "px",
                 "left": triggerPosition[1] + "px",
                 "transform": "scaleX(" + scaleValues[1] + ") scaleY(" + scaleValues[0] + ")"
                 //"border":"1px solid red"
             }).one("transitionend", function () {
-                //one works like on, but listens to the callback only once
                 selectedModalWindow.addClass("modal-visible");
             });
-
 
         }
 
         modalTrigger.on("click", launchModal);
-
-
         modalWindow.on("click", ".close-modal", closeModal);
         function closeModal(event) {
 
@@ -260,14 +252,10 @@ $(document).ready(function () {
             //show scroll to top
             $('#go_top').show();
 
-
-            //get modal window && background
             var selectedModalWindow = $(this).parent(".morph-modal");
             var selectedBackground = selectedModalWindow.children(".morph-background");
 
-            //hide the modal content
             modalWindow.removeClass("modal-visible");
-            //reduce
             selectedBackground.css({
                 "transform": "scaleX(1) scaleY(1)"
             }).one("transitionend", function () {
@@ -276,6 +264,7 @@ $(document).ready(function () {
         }
     }
 
+    //Carousel portfolio funtion
     function carousel_project_type_website() {
         $('#carousel_project_type_website').carousel()
     }

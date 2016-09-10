@@ -457,11 +457,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div id="letstalk" class="col-md-12" style="display: block;">
-                                <form class="form-horizontal" role="form" novalidate="novalidate">
+                                <form class="form-horizontal" id="contactForm" role="form" novalidate="novalidate">
 
                                     <div class="form-group">
                                         <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Full Name">
+                                            <input type="text" name="fullname" class="form-control" placeholder="Full Name">
                                         </div>
                                         <div class="col-md-6">
                                             <input type="text" name="company" class="form-control"
@@ -489,7 +489,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="button btn-contact button-block">Submit</button>
+                                        <button type="submit" class="button btn-contact button-block" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -512,7 +512,7 @@
                             <p>A descriptive sentence for the Call To Action (CTA).</p>
                         </div>
                         <div class="col-md-3 to-match animate_waypoint animated">
-                            <a href="#" class="btn btn-lg btn-default ca_button"><span class="fa fa-compress"></span>
+                            <a href="cost-estimation.html" class="btn btn-lg btn-default ca_button"><span class="fa fa-compress"></span>
                                 Estimate price</a>
                         </div>
                     </article>
@@ -530,7 +530,7 @@
                     <article>
                         <div class="col-md-6 to-match animate_waypoint animated text-left">
 
-                            <p>Copyright &copy; 2016 - <span class="ivy_footer">Theme Ivy</span></p>
+                            <p>Copyright &copy; 20xx - <span class="ivy_footer">Theme Ivy</span></p>
                         </div>
                         <div class="col-md-6 to-match animate_waypoint animated text-right">
                             <a href="#"><i class="fa fa-facebook-square fa-3x social"></i></a>
@@ -954,73 +954,11 @@
 <script src="node_modules/typed.js/dist/typed.min.js"></script>
 <script src="node_modules/desandro-classie/classie.js"></script>
 <script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
+<script src="node_modules/jquery-form/jquery.form.js"></script>
 <script src="node_modules/granim/dist/granim.min.js"></script>
 
 
 <!-- Custom JS -->
 <script src="dist/scripts/main.min.js"></script>
-
-<script>
-
-    //Submit CV Request
-    $('#cv_submit').on('click', function () {
-
-        //Run animation
-        var $this = $(this);
-        $this.button('loading');
-        setTimeout(function () {
-            $this.button('reset');
-        }, 3000);
-
-        //Show notification
-        $.toast({
-            heading: 'Success',
-            text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
-            showHideTransition: 'slide',
-            icon: 'success',
-            position: 'bottom-right',
-
-        })
-    });
-
-    //Submit Portfolio Request
-    $('#portfolio_submit').on('click', function () {
-
-        //Run animation
-        var $this = $(this);
-        $this.button('loading');
-        setTimeout(function () {
-            $this.button('reset');
-        }, 3000);
-
-        //Show notification
-        $.toast({
-            heading: 'Success',
-            text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
-            showHideTransition: 'slide',
-            icon: 'success',
-            position: 'bottom-right'
-
-        })
-    });
-
-    //Homepage background transitions
-    var granimInstance = new Granim({
-        element: '#canvas-image',
-        direction: 'top-bottom',
-        opacity: [1, .5, 0],
-        isPausedWhenNotInView: true,
-        states: {
-            "default-state": {
-                gradients: [
-                    ['#485563', '#29323c', '#29323c'],
-                    ['#00c6ff', '#0072ff', '#0072ff']
-                ],
-                transitionSpeed: 6000
-            }
-        }
-    });
-</script>
-
 </body>
 </html>
