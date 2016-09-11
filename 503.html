@@ -1,1 +1,158 @@
-503
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ivy | Error 503</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Styles -->
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Main CSS -->
+    <link href="dist/styles/base.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar-wrapper">
+        <ul id="sidebar_menu" class="sidebar-nav">
+            <li class="sidebar-brand"><a id="menu-toggle" href="#">Ivy<span id="main_icon" class="fa fa-bars"></span></a></li>
+        </ul>
+        <ul class="sidebar-nav" id="sidebar">
+            <li class="pointer"><a href="index.html"  data-toggle="tooltip" data-placement="right" title="Home">Home<span class="sub_icon fa fa-home"></span></a></li>
+            <li class="pointer"><a href="index.html#about" data-toggle="tooltip" data-placement="right" title="About">About me<span class="sub_icon fa fa-user"></span></a></li>
+            <li class="pointer"><a href="index.html#portfolio" data-toggle="tooltip" data-placement="right" title="Portfolio">Portfolio<span class="sub_icon fa fa-briefcase"></span></a></li>
+            <li class="pointer"><a href="index.html#blog" data-toggle="tooltip" data-placement="right" title="Blog">Blog<span class="sub_icon fa fa-comment-o"></span></a></li>
+            <li class="pointer"><a href="index.html#contacts" data-toggle="tooltip" data-placement="right" title="Contacts">Contacts<span class="sub_icon fa fa-envelope-o"></span></a></li>
+            <li><a href="components.html" data-toggle="tooltip" data-placement="right"
+                   title="Components">Components<span class="sub_icon fa fa-css3 pull-right"></span></a></li>
+
+            <!-- Submenu 1 -->
+            <li class="pointer"><a id="submenu_1" data-toggle="collapse" data-target="#submenu_pages"
+                                   aria-expanded="false">Pages<span class="sub_icon fa fa-share pull-right"></span></a>
+                <ul class="nav collapse" id="submenu_pages" role="menu" aria-labelledby="submenu_2">
+                    <li><a data-scroll="contacts" data-toggle="tooltip" data-placement="right" title="Blog"
+                           href="blog.html">Blog<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="blog-single.html" data-toggle="tooltip" data-placement="right" title="Blog Single">Blog
+                        single<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="portfolio.html" data-toggle="tooltip" data-placement="right" title="Portfolio">Portfolio<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="portfolio-single.html" data-toggle="tooltip" data-placement="right"
+                           title="Portfolio Single">Portfolio 2<span class="sub_icon fa fa-circle-o pull-right"></span></a>
+                    </li>
+                    <li><a href="cv.html" data-toggle="tooltip" data-placement="right" title="CV">CV<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="password.html" data-toggle="tooltip" data-placement="right"
+                           title="Password">Password<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="cost-estimation.html" data-toggle="tooltip" data-placement="right"
+                           title="Cost estimation">Cost<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                </ul>
+            </li>
+            <!-- /Submenu 1 -->
+
+            <!-- Submenu 2 -->
+            <li class="pointer"><a id="submenu-2" data-toggle="collapse" data-target="#submenu_errors"
+                                   aria-expanded="false">Errors<span
+                    class="sub_icon fa fa-exclamation-triangle pull-right"></span></a>
+                <ul class="nav collapse" id="submenu_errors" role="menu" aria-labelledby="btn-1">
+                    <li><a href="404.html" data-toggle="tooltip" data-placement="right" title="Error 404">404<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="500.html" data-toggle="tooltip" data-placement="right" title="Error 500">500<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="503.html" data-toggle="tooltip" data-placement="right" title="Error 503">503<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+
+                </ul>
+            </li>
+            <!-- /Submenu 2 -->
+
+        </ul>
+
+        <ul class="sidebar-nav sidebar-bottom">
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="GitHub">GitHub<span
+                    class="sub_icon fa fa-git"></span></a></li>
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="LinkedIn">LinkedIn<span
+                    class="sub_icon fa fa-linkedin"></span></a></li>
+        </ul>
+    </nav>
+    <!-- / Sidebar -->
+
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+
+        <!-- Section -->
+        <section class="container-full error">
+            <div class="row container container-aligned container-bottom-padding">
+                <div class="col-md-12 to-match">
+
+                    <h1>503</h1>
+                    <h2>Service unavailable</h2>
+                    <article>
+                        <p>
+                            The server is currently unable to handle the request due to a temporary overloading or maintenance of the server., try refreshing the page or click the button below to go back to the Homepage.
+                        </p>
+                    </article>
+                    <article>
+                        <a href="index.html" class="btn button"> <i class="fa fa-arrow-left"></i> Go back to Homepage</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+    </div>
+</div>
+<!-- Back to Top -->
+<a href="#0" class="cd-top cd-is-visible" id="go_top">Top</a>
+
+
+<!-- jQuery -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS plugins -->
+<script src="node_modules/desandro-classie/classie.js"></script>
+<script src ="node_modules/console.style/console.style.min.js"></script>
+
+
+
+<!-- Custom JS -->
+<script src="dist/scripts/main.min.js"></script>
+<script src="dist/scripts/console.min.js"></script>
+</body>
+</html>

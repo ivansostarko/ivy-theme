@@ -1,0 +1,27 @@
+.error {
+  h1 {
+    text-align:center;
+    font-size:6em;
+    margin:25px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  article {
+    width:50%;
+    margin: 25px auto 25px auto;
+    text-align: center;
+  }
+  .button {
+
+    margin: 25px auto 25px auto;
+  }
+
+  @media (max-width: 767px) {
+
+    article {
+      width:100%;
+    }
+  }
+}
