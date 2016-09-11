@@ -1,11 +1,49 @@
 $(document).ready(function () {
 
     //Init functions
+    homeScroll();
+    homeWaypoints();
     homeContactForm();
     homeCVForm();
     homePorftolioForm();
     homeBackgroundTransitions();
+    homeScrollToAbout();
+    homeCarouselProjectTypeWebsite();
+    homeText();
+    homeOpenPortfolioModal();
 
+    //Scroller for sidemenu function
+    function homeScroll() {
+        $('#sidebar').activescroll({
+            active: "highlight"
+        });
+    }
+
+
+
+    //Waypoints animations function
+    function homeWaypoints() {
+
+        //bounceInLeft animation class
+        $('#about-title').waypoint(function () {
+            $('#about-title').addClass('animated bounceInLeft animation_delay');
+        }, {offset: '75%'});
+        $('#request-cv-title').waypoint(function () {
+            $('#request-cv-title').addClass('animated bounceInLeft animation_delay');
+        }, {offset: '75%'});
+        $('#featured_works-title').waypoint(function () {
+            $('#featured_works-title').addClass('animated bounceInLeft animation_delay');
+        }, {offset: '75%'});
+        $('#request-portfolio-title').waypoint(function () {
+            $('#request-portfolio-title').addClass('animated bounceInLeft animation_delay');
+        }, {offset: '75%'});
+
+        //fadeInDown animation class
+        $('.animate_waypoint_fadeInDown').waypoint(function () {
+            $('.animate_waypoint_fadeInDown').addClass('animated fadeInDown animation_delay');
+        }, {offset: '75%'});
+
+    }
 
     //Contact form function
     function homeContactForm() {
@@ -73,8 +111,7 @@ $(document).ready(function () {
                 text: 'Add your message here.',
                 showHideTransition: 'slide',
                 icon: 'success',
-                position: 'bottom-right',
-
+                position: 'bottom-right'
             })
         });
     }
@@ -122,5 +159,112 @@ $(document).ready(function () {
         });
     }
 
+    //Scroll to about section function
+    function homeScrollToAbout() {
+        $("#scrollToAbout").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 1000);
+        });
+    }
 
+    //Carousel portfolio function
+    function homeCarouselProjectTypeWebsite() {
+        $('#carousel_project_type_website').carousel()
+    }
+
+    //Home text function
+    function homeText() {
+        $("#home_text").typed({
+            strings: ["Forever free, open source, and easy to use.", " You can use Ivy for any purpose, even comercially!.", "Ivy is built for the Bootstrap 3."],
+            typeSpeed: 50,
+            backDelay: 500,
+            loop: true,
+            loopCount: false
+        });
+    }
+
+    //Open portfolio homepage function function
+    function homeOpenPortfolioModal() {
+        /* https://codyhouse.co/gem/morphing-modal-window/ */
+
+        var modalTrigger = $(".morph-btn");
+        var modalWindow = $(".morph-modal");
+        var closeTrigger = $(".close-modal");
+
+        function getElementPosition(getSelectedModalTrigger) {
+            var top = getSelectedModalTrigger.offset().top - $(window).scrollTop();
+            var left = getSelectedModalTrigger.offset().left;
+
+            return [top, left];
+        }
+
+
+        function evalScale(element, position) {
+            var scaleY = scaleValue(position[0], element.innerHeight(), $(window).height());
+            var scaleX = scaleValue(position[1], element.innerWidth(), $(window).width());
+
+            return [scaleY, scaleX];
+        }
+
+
+        function scaleValue(firstCoord, elSize, windowSize) {
+            var secondCoord = windowSize - firstCoord - elSize;
+            var maxCoord = Math.max(firstCoord, secondCoord);
+            var scaleValue = (maxCoord * 2 + elSize) / elSize;
+
+            return Math.ceil(scaleValue * 10) / 10;
+        }
+
+        function launchModal(e) {
+            e.preventDefault;
+
+            //hide scroll body
+            $('body').css('overflow', 'hidden');
+
+            //hide scroll to top when modal box is running
+            $('#go_top').hide();
+
+            var selectedModalTrigger = $(this);
+            var modalId = selectedModalTrigger.attr("href");
+
+            var selectedModalWindow = modalWindow.filter(modalId);
+            var selectedMorphBackground = selectedModalWindow.children(".morph-background");
+            selectedModalWindow.addClass("open-modal");
+            var triggerPosition = getElementPosition(selectedModalTrigger);
+
+            var scaleValues = evalScale(selectedMorphBackground, triggerPosition);
+
+            selectedMorphBackground.css({
+                "top": triggerPosition[0] + "px",
+                "left": triggerPosition[1] + "px",
+                "transform": "scaleX(" + scaleValues[1] + ") scaleY(" + scaleValues[0] + ")"
+                //"border":"1px solid red"
+            }).one("transitionend", function () {
+                selectedModalWindow.addClass("modal-visible");
+            });
+
+        }
+
+        modalTrigger.on("click", launchModal);
+        modalWindow.on("click", ".close-modal", closeModal);
+        function closeModal(event) {
+
+            //show scroll on body
+            $('body').css('overflow', 'scroll');
+
+            //show scroll to top
+            $('#go_top').show();
+
+            var selectedModalWindow = $(this).parent(".morph-modal");
+            var selectedBackground = selectedModalWindow.children(".morph-background");
+
+            modalWindow.removeClass("modal-visible");
+            selectedBackground.css({
+                "transform": "scaleX(1) scaleY(1)"
+            }).one("transitionend", function () {
+                selectedModalWindow.removeClass("open-modal");
+            });
+        }
+    }
 });

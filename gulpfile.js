@@ -53,7 +53,7 @@ gulp.task('scripts', function(){
                 console.log(error.message);
                 this.emit('end');
             }}))
-        .pipe(concat('main.js'))
+        //.pipe(concat('main.js'))
         .pipe(gulp.dest('dist/scripts/'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())

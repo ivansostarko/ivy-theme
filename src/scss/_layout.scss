@@ -59,6 +59,15 @@ p {
   height: auto;
 }
 
+.animation {
+  opacity:0;
+}
+.animate_waypoint_fadeInDown {
+  opacity: 0;
+}
+.animation_delay {
+  opacity:1;
+}
 section:not(:first-of-type),
 section:not(:nth-of-type(n2)) {
   margin-top: 80px;

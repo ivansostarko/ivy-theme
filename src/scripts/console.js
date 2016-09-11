@@ -1,0 +1,1 @@
+console.style('<css="color: rgba(0, 0, 0, 0.6);font-size: 30px;background-color: rgb(110, 110, 110);text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px; padding-left:10px;">Welcome to Ivy Theme</css>');
