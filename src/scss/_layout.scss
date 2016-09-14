@@ -32,20 +32,85 @@ body.overflow-hidden {
   overflow: hidden;
 }
 
+
+/* Components
+===================================*/
 h1, h2, h3, h4, h5 {
   font-family: $primary-font;
+  font-weight:300;
+}
+h1 {
+  font-size:36px;
   font-weight: 700;
 }
+h2 {
+  font-size:30px;
 
+}
 p {
   text-align: justify;
 }
-
+mark {
+  background-color: $primary-color;
+  color: $light;
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 15.5px;
+  border-left: 5px solid $primary-color;
+}
+blockquote > footer {
+  background:transparent;
+  padding:0;
+}
+code {
+  background-color: $dark;
+  color:$stable;
+}
+pre {
+  color: $dark;
+  border-radius:0;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 .row {
   margin-left: 0;
   margin-right: 0;
 }
-
+table {
+  .active {
+    background: $light;
+  }
+  .normal {
+    background: transparent;
+  }
+  .primary {
+    background: $dark;
+    color: $light;
+  }
+  .success {
+    background: $balanced;
+  }
+  .info {
+    background: $energized;
+  }
+  .warning {
+    background: $energized;
+    color: $dark;
+  }
+  .danger {
+    background: $assertive;
+    color: $dark;
+  }
+}
+thead {
+  background: $primary-color;
+  color: $light;
+}
 #wrapper {
   padding-left: 70px;
   transition: all .4s ease 0s;
@@ -133,10 +198,46 @@ section {
 }
 
 .btn {
+  padding:10px 20px;
+  border:none;
   border-radius: 0;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+.btn-outlined {
+  padding:10px 20px;
+  background: transparent;
+  color: $dark;
+  border:1px solid;
+  border-radius: 0;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 }
 
+.btn-xs {
+  padding: 1px 5px;
+}
+.btn-sm {
+  padding: 5px 10px;
+}
+.btn-lg {
+  padding: 15px 25px;
+}
 
+.form-control {
+  background-color:transparent;
+  border-radius: 0;
+  border-color: $dark;
+  padding:10px;
+  height:50px;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  box-shadow: none;
+}
 .content-header h1 {
   margin: 0;
   margin-left: 20px;
@@ -588,6 +689,9 @@ footer {
   }
 }
 
+.buttons-demo {
+  margin-top:25px;
+}
 @media (max-width: 767px) {
   #wrapper {
     padding-left: 70px;

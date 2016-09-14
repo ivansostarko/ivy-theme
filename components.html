@@ -1,1 +1,956 @@
-Components
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ivy | Components</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/normalize.css/normalize.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600" rel="stylesheet"
+          type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Styles -->
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/bselect/css/bselect.min.css" rel="stylesheet">
+    <link href="node_modules/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet">
+
+
+    <!-- Main CSS -->
+    <link href="dist/styles/base.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar-wrapper">
+        <ul id="sidebar_menu" class="sidebar-nav">
+            <li class="sidebar-brand"><a id="menu-toggle" href="#">Ivy<span id="main_icon"
+                                                                            class="fa fa-bars"></span></a></li>
+        </ul>
+        <ul class="sidebar-nav" id="sidebar">
+            <li class="pointer"><a href="index.html" data-toggle="tooltip" data-placement="right" title="Home">Home<span
+                    class="sub_icon fa fa-home"></span></a></li>
+            <li class="pointer"><a href="index.html#about" data-toggle="tooltip" data-placement="right" title="About">About
+                me<span class="sub_icon fa fa-user"></span></a></li>
+            <li class="pointer"><a href="index.html#portfolio" data-toggle="tooltip" data-placement="right"
+                                   title="Portfolio">Portfolio<span class="sub_icon fa fa-briefcase"></span></a></li>
+            <li class="pointer"><a href="index.html#blog" data-toggle="tooltip" data-placement="right" title="Blog">Blog<span
+                    class="sub_icon fa fa-comment-o"></span></a></li>
+            <li class="pointer"><a href="index.html#contacts" data-toggle="tooltip" data-placement="right"
+                                   title="Contacts">Contacts<span class="sub_icon fa fa-envelope-o"></span></a></li>
+            <li><a href="components.html" data-toggle="tooltip" data-placement="right"
+                   title="Components">Components<span class="sub_icon fa fa-css3 pull-right"></span></a></li>
+
+            <!-- Submenu 1 -->
+            <li class="pointer"><a id="submenu_1" data-toggle="collapse" data-target="#submenu_pages"
+                                   aria-expanded="false">Pages<span class="sub_icon fa fa-share pull-right"></span></a>
+                <ul class="nav collapse" id="submenu_pages" role="menu" aria-labelledby="submenu_2">
+                    <li><a data-scroll="contacts" data-toggle="tooltip" data-placement="right" title="Blog"
+                           href="blog.html">Blog<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="blog-single.html" data-toggle="tooltip" data-placement="right" title="Blog Single">Blog
+                        single<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="portfolio.html" data-toggle="tooltip" data-placement="right" title="Portfolio">Portfolio<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="portfolio-single.html" data-toggle="tooltip" data-placement="right"
+                           title="Portfolio Single">Portfolio 2<span class="sub_icon fa fa-circle-o pull-right"></span></a>
+                    </li>
+                    <li><a href="cv.html" data-toggle="tooltip" data-placement="right" title="CV">CV<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="password.html" data-toggle="tooltip" data-placement="right"
+                           title="Password">Password<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="cost-estimation.html" data-toggle="tooltip" data-placement="right"
+                           title="Cost estimation">Cost<span class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                </ul>
+            </li>
+            <!-- /Submenu 1 -->
+
+            <!-- Submenu 2 -->
+            <li class="pointer"><a id="submenu-2" data-toggle="collapse" data-target="#submenu_errors"
+                                   aria-expanded="false">Errors<span
+                    class="sub_icon fa fa-exclamation-triangle pull-right"></span></a>
+                <ul class="nav collapse" id="submenu_errors" role="menu" aria-labelledby="btn-1">
+                    <li><a href="404.html" data-toggle="tooltip" data-placement="right" title="Error 404">404<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="500.html" data-toggle="tooltip" data-placement="right" title="Error 500">500<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+                    <li><a href="503.html" data-toggle="tooltip" data-placement="right" title="Error 503">503<span
+                            class="sub_icon fa fa-circle-o pull-right"></span></a></li>
+
+                </ul>
+            </li>
+            <!-- /Submenu 2 -->
+
+        </ul>
+
+        <ul class="sidebar-nav sidebar-bottom">
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="GitHub">GitHub<span
+                    class="sub_icon fa fa-git"></span></a></li>
+            <li class="pointer"><a href="#" data-toggle="tooltip" data-placement="right" title="LinkedIn">LinkedIn<span
+                    class="sub_icon fa fa-linkedin"></span></a></li>
+        </ul>
+    </nav>
+    <!-- / Sidebar -->
+
+    <!-- Page content -->
+    <div id="page-content-wrapper ">
+
+        <!-- Section Typography-->
+        <section class="container-full components">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Typography</h1>
+                    </div>
+                    <article>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <h3>Headings</h3>
+                                    <h1>H1. Heading
+                                        <small>secondary text</small>
+                                    </h1>
+                                    <h2>H2. Heading
+                                        <small>secondary text</small>
+                                    </h2>
+                                    <h3>H3. Heading
+                                        <small>secondary text</small>
+                                    </h3>
+                                    <h4>H4. Heading
+                                        <small>secondary text</small>
+                                    </h4>
+                                    <h5>H5. Heading
+                                        <small>secondary text</small>
+                                    </h5>
+                                    <h6>H6. Heading
+                                        <small>secondary text</small>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <h3>Highlight Text</h3>
+                                    <p>Use the mark element to
+                                        <mark>highlight</mark>
+                                        text.
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <h3>Abbreviations</h3>
+                                    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+                                </div>
+                                <div class="row">
+                                    <h3>Blockquote</h3>
+                                    <blockquote>
+                                        <p>For 50 years, WWF has been protecting the future of nature. The world's
+                                            leading
+                                            conservation organization, WWF works in 100 countries and is supported by
+                                            1.2
+                                            million members in the United States and close to 5 million globally.</p>
+                                        <footer>From WWF's website</footer>
+                                    </blockquote>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Code Snippets</h3>
+                                    <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code>
+                                        defines a section in a document.</p>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Multiple Code Lines</h3>
+                                    <pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section Typography -->
+
+        <!-- Section Code highlight -->
+        <section class="container-full">
+            <div class="row container container-aligned ">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Code highlight</h1>
+                    </div>
+                    <article>
+                        <h3>Java example</h3>
+                        <pre>
+                            <code class="hljs java">
+/*** @author John Smith <john.smith@example.com> */
+package l2f.gameserver.model;
+
+public abstract class L2Char extends L2Object {
+  public static final Short ERROR = 0x0001;
+
+  public void moveTo(int x, int y, int z) {
+    _ai = null;
+    log("Should not be called");
+    if (1 > 5) { // wtf!?
+      return;
+    }
+  }
+}</code></pre>
+
+                        <h3>Typescript example</h3>
+                        <pre><code class="hljs typescript">class MyClass {
+  public static myValue: string;
+  constructor(init: string) {
+    this.myValue = init;
+  }
+}
+import fs = require("fs");
+module MyModule {
+  export interface MyInterface extends Other {
+    myProperty: any;
+  }
+}
+declare magicNumber number;
+myArray.forEach(() => { }); // fat arrow syntax</code></pre>
+
+                        <h3>JavaScript example</h3>
+                        <pre><code class="hljs javascript">function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+}
+
+export  $initHighlight;</code></pre>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned ">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Tables</h1>
+                    </div>
+                    <article>
+                        <h3>Basic example</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <th>ID</th>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Peter</td>
+                                    <td>Smith</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Smith</td>
+                                    <td>Gary</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>John</td>
+                                    <td>Evens</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Mark</td>
+                                    <td>Simspon</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Striped rows</h3>
+                        <div class="table-responsive">
+                            <table class="table  table-striped  ">
+                                <thead>
+                                <th>ID</th>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Peter</td>
+                                    <td>Smith</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Smith</td>
+                                    <td>Gary</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>John</td>
+                                    <td>Evens</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Mark</td>
+                                    <td>Simspon</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Bordered table</h3>
+                        <div class="table-responsive">
+                            <table class="table  table-bordered ">
+                                <thead>
+                                <th>ID</th>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Peter</td>
+                                    <td>Smith</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Smith</td>
+                                    <td>Gary</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>John</td>
+                                    <td>Evens</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Mark</td>
+                                    <td>Simspon</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Hover rows</h3>
+                        <div class="table-responsive">
+                            <table class="table  table-hover table-bordered">
+                                <thead>
+                                <th>ID</th>
+                                <th>First name</th>
+                                <th>Last name</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Peter</td>
+                                    <td>Smith</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Smith</td>
+                                    <td>Gary</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>John</td>
+                                    <td>Evens</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Mark</td>
+                                    <td>Simspon</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Conextual classes</h3>
+                        <div class="table-responsive">
+                            <table class="table   table-bordered">
+                                <thead>
+                                <th>ID</th>
+                                <th>Heading</th>
+                                <th>Content</th>
+
+                                </thead>
+                                <tbody>
+                                <tr class="active">
+                                    <td>1</td>
+                                    <td>Active row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="normal">
+                                    <td>2</td>
+                                    <td>Normal row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="primary">
+                                    <td>3</td>
+                                    <td>Primary row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>4</td>
+                                    <td>Success row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>5</td>
+                                    <td>Info row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>6</td>
+                                    <td>Warning row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>7</td>
+                                    <td>Danger row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2>X-editable table</h2>
+                        <div class="table-responsive">
+                            <table class="table   table-bordered">
+                                <thead>
+                                <th>ID</th>
+                                <th>Heading</th>
+                                <th>ss</th>
+
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="#" id="username" data-type="text" data-pk="1" data-url="/post"
+                                           data-title="Enter username">superuser</a></td>
+                                    <td>
+                                        <button class="button">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr class="normal">
+                                    <td>2</td>
+                                    <td>Normal row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="primary">
+                                    <td>3</td>
+                                    <td>Primary row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>4</td>
+                                    <td>Success row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>5</td>
+                                    <td>Info row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>6</td>
+                                    <td>Warning row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>7</td>
+                                    <td>Danger row</td>
+                                    <td>Content here...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Buttons</h1>
+                    </div>
+                    <article>
+                        <h3>STANDARD BUTTONS</h3>
+                        <div class="buttons-demo">
+                            <button type="button" class="btn btn-default">Default</button>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </div>
+                        <h3>OUTLINED BUTTONS</h3>
+                        <div class="buttons-demo">
+                            <button type="button" class="btn-outlined btn-default">Default</button>
+                            <button type="button" class="btn-outlined btn-primary">Primary</button>
+                            <button type="button" class="btn-outlined btn-success">Success</button>
+                            <button type="button" class="btn-outlined btn-info">Info</button>
+                            <button type="button" class="btn-outlined btn-warning">Warning</button>
+                            <button type="button" class="btn-outlined btn-danger">Danger</button>
+                        </div>
+                        <h3>BUTTON SIZES</h3>
+                        <div class="buttons-demo">
+                            <button type="button" class="btn btn-primary btn-xs">Extra Small Button</button>
+                            <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+                            <button type="button" class="btn btn-primary">Default Button</button>
+                            <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Forms</h1>
+                    </div>
+                    <article>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <h3>Basic example</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                   placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                                   placeholder="Password">
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Inline form</h3>
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label for="exampleInputName2">Name</label>
+                                            <input type="text" class="form-control" id="exampleInputName2"
+                                                   placeholder="Jane Doe">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail2">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail2"
+                                                   placeholder="jane.doe@example.com">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Send invitation</button>
+                                    </form>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Horizontal form</h3>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPassword3"
+                                                       placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> Remember me
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                                <button type="submit" class="btn btn-default">Sign in</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Textarea</h3>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Check box</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Option one is this and that&mdash;be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                            <input type="checkbox" value="" disabled>
+                                            Option two is disabled
+                                        </label>
+                                    </div>
+
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"
+                                                   checked>
+                                            Option one is this and that&mdash;be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios2"
+                                                   value="option2">
+                                            Option two can be something else and selecting it will deselect option one
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"
+                                                   disabled>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Inline checkboxes and radios</h3>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                                    </label>
+
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        1
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        2
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        3
+                                    </label>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Validation states</h3>
+                                    <div class="form-group has-success has-feedback">
+                                        <label class="control-label" for="inputSuccess2">Input with success</label>
+                                        <input type="text" class="form-control" id="inputSuccess2"
+                                               aria-describedby="inputSuccess2Status">
+                                        <span class="glyphicon glyphicon-ok form-control-feedback"
+                                              aria-hidden="true"></span>
+                                        <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                                    </div>
+                                    <div class="form-group has-warning has-feedback">
+                                        <label class="control-label" for="inputWarning2">Input with warning</label>
+                                        <input type="text" class="form-control" id="inputWarning2"
+                                               aria-describedby="inputWarning2Status">
+                                        <span class="glyphicon glyphicon-warning-sign form-control-feedback"
+                                              aria-hidden="true"></span>
+                                        <span id="inputWarning2Status" class="sr-only">(warning)</span>
+                                    </div>
+                                    <div class="form-group has-error has-feedback">
+                                        <label class="control-label" for="inputError2">Input with error</label>
+                                        <input type="text" class="form-control" id="inputError2"
+                                               aria-describedby="inputError2Status">
+                                        <span class="glyphicon glyphicon-remove form-control-feedback"
+                                              aria-hidden="true"></span>
+                                        <span id="inputError2Status" class="sr-only">(error)</span>
+                                    </div>
+                                    <div class="form-group has-success has-feedback">
+                                        <label class="control-label" for="inputGroupSuccess1">Input group with
+                                            success</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">@</span>
+                                            <input type="text" class="form-control" id="inputGroupSuccess1"
+                                                   aria-describedby="inputGroupSuccess1Status">
+                                        </div>
+                                        <span class="glyphicon glyphicon-ok form-control-feedback"
+                                              aria-hidden="true"></span>
+                                        <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <h3>Select menu</h3>
+                                    <div class="form-group">
+                                        <label>Select list:</label>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Progress bar</h1>
+                    </div>
+                    <article>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                40% Complete (success)
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                50% Complete (info)
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                60% Complete (warning)
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar"
+                                 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                70% Complete (danger)
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Alerts</h1>
+                    </div>
+                    <article>
+                        <div class="alert alert-success">
+                            <strong>Success!</strong> Indicates a successful or positive action.
+                        </div>
+
+                        <div class="alert alert-info">
+                            <strong>Info!</strong> Indicates a neutral informative change or action.
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <strong>Warning!</strong> Indicates a warning that might need attention.
+                        </div>
+
+                        <div class="alert alert-danger">
+                            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Pagination</h1>
+                    </div>
+                    <article>
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Breadcrumbs</h1>
+                    </div>
+                    <article>
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Private</a></li>
+                            <li><a href="#">Pictures</a></li>
+                            <li class="active">Vacation</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+
+
+        <!-- Section -->
+        <section class="container-full">
+            <div class="row container container-aligned">
+                <div class="col-md-12 to-match">
+                    <div class="page-title">
+                        <h1>Popover</h1>
+                    </div>
+                    <article>
+                        <ul class="list-inline">
+                            <li><a href="#" title="Header" data-toggle="popover" data-placement="top"
+                                   data-content="Content">Top</a></li>
+                            <li><a href="#" title="Header" data-toggle="popover" data-placement="bottom"
+                                   data-content="Content">Bottom</a></li>
+                            <li><a href="#" title="Header" data-toggle="popover" data-placement="left"
+                                   data-content="Content">Left</a></li>
+                            <li><a href="#" title="Header" data-toggle="popover" data-placement="right"
+                                   data-content="Content">Right</a></li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Section -->
+    </div>
+</div>
+<!-- Back to Top -->
+<a href="#0" class="cd-top cd-is-visible" id="go_top">Top</a>
+
+
+<!-- jQuery -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- JS plugins -->
+<script src="node_modules/page-accelerator/dist/page-accelerator.min.js"></script>
+<script src="node_modules/desandro-classie/classie.js"></script>
+<script src="node_modules/console.style/console.style.min.js"></script>
+<script src="node_modules/bselect/js/bselect.min.js"></script>
+<script src="node_modules/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+<script src="https://highlightjs.org/static/highlight.pack.js"></script>
+
+
+<!-- Custom JS -->
+<script src="dist/scripts/main.min.js"></script>
+<script src="dist/scripts/console.min.js"></script>
+<script src="dist/scripts/components.min.js"></script>
+</body>
+</html>

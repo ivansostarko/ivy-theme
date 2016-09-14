@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-
+    //Load web pages faster
+    pageAccelerator();
 
     //Remove later
     $('#wrapper').addClass('loaded');
@@ -46,7 +47,12 @@ $(document).ready(function () {
             $back_to_top = $('.cd-top');
 
         $(window).scroll(function () {
-            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if ($(this).scrollTop() > offset ) {
+            $back_to_top.addClass('cd-is-visible');
+        }
+        else {
+                $back_to_top.removeClass('cd-is-visible cd-fade-out');
+        }
             if ($(this).scrollTop() > offset_opacity) {
                 $back_to_top.addClass('cd-fade-out');
             }

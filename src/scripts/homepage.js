@@ -112,7 +112,7 @@ $(document).ready(function () {
                 showHideTransition: 'slide',
                 icon: 'success',
                 position: 'bottom-right'
-            })
+            });
         });
     }
 
@@ -145,7 +145,7 @@ $(document).ready(function () {
         var granimInstance = new Granim({
             element: '#canvas-image',
             direction: 'top-bottom',
-            opacity: [1, .5, 0],
+            opacity: [1, 0.5, 0],
             isPausedWhenNotInView: true,
             states: {
                 "default-state": {
@@ -170,7 +170,7 @@ $(document).ready(function () {
 
     //Carousel portfolio function
     function homeCarouselProjectTypeWebsite() {
-        $('#carousel_project_type_website').carousel()
+        $('#carousel_project_type_website').carousel();
     }
 
     //Home text function
@@ -217,7 +217,7 @@ $(document).ready(function () {
         }
 
         function launchModal(e) {
-            e.preventDefault;
+            //e.preventDefault;
 
             //hide scroll body
             $('body').css('overflow', 'hidden');
