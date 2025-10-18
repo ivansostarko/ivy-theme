@@ -41,3 +41,7 @@ dist
 
 # Idea
 .idea
+
+
+update_repo.sh
+update_repo.log 
