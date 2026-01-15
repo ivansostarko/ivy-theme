@@ -1,4 +1,6 @@
 # Ivy - Bootstrap theme
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/IvanSostarko/ivy-theme.svg)](https://greenkeeper.io/)
 > Simple personal theme built with Bootstrap.
 > Free for both personal and commercial use.
 
